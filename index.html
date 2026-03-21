@@ -4,127 +4,213 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hi! Im Aravinda</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+        />
         <link href="./dist/output.css" rel="stylesheet" />
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     </head>
-    <body class="flex items-center justify-center">
+
+    <body class="h-screen w-full overflow-y-auto md:overflow-hidden">
         <div
-            class="flex items-start justify-center h-screen flex-col w-[600px]"
+            class="grid md:grid-cols-[400px_1fr] grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 h-full"
         >
+            <!-- info  -->
             <div
-                class="mb-6 rainbow-border animate-rainbow-spin rounded-full w-30"
+                class="flex flex-col bg-gray-50 p-6 md:h-full text-sm text-gray-700"
             >
-                <img
-                    class="rounded-full border-white"
-                    src="/assets/1763549431722.jpg"
-                    alt=""
-                />
-            </div>
-            <div class="mb-10">
-                <div class="font-medium text-gray-800">Hi! Im Aravinda</div>
-
-                <div class="text-gray-500 max-w-xl text-center">
-                    Designer & Developer
-                    <!-- Using Figma and
-                SvelteKit, I build and validate high-fidelity prototypes that
-                accelerate the path to launch. -->
-                </div>
-            </div>
-            <div class="text-gray-800 flex gap-4 flex-col">
-                <div class="font-medium text-2xl">
-                    A good product builds user habits, supports dev and moves
-                    business goals forward.
-                </div>
-                <div>
-                    When your UX can’t keep up with engineering and growth teams
-                    speed, users churn away and you can't grow your firm as fast
-                    as you want. I help founders build UX that scales with the
-                    product—so design stops breaking every time you ship.
-                </div>
-                <div>
-                    I’ve worked with pre-seed to Series A startups backed by YC,
-                    Accel, Bain Capital, and trusted by teams at AWS, Nvidia,
-                    Salesforce, Figma, Deloitte, Tata, and Pfizer.
-                </div>
-                <ul>
-                    <li>
-                        - Projects for MVP and PoC development typically take
-                        2-5 months.
-                    </li>
-                    <li>
-                        - I do offer UX audits, design systems and maintenaince
-                        retainers when needed.
-                    </li>
-                    <li>
-                        - User research and testing is offered on a limited
-                        basis.
-                    </li>
-                    <li>
-                        - Want a custom sprint or one-off project? Let’s chat.
-                    </li>
-                </ul>
-            </div>
-            <!-- <div class="h-10 flex gap-6 mt-10">
-                <a href="https://www.figma.com/@aravinda" target="_blank">
+                <!-- <div class="mb-3">
                     <img
-                        src="/assets/figma logo.png"
-                        class="h-full w-full object-contain"
-                        alt="Description"
+                        class="w-15 rounded-full"
+                        src="assets/profile.jpg"
+                        alt=""
                     />
-                </a>
-
-                <a href="https://github.com/apranthilaka" target="_blank">
-                    <img
-                        src="/assets/github.png"
-                        class="h-full w-full object-contain"
-                        alt="Description"
-                    />
-                </a>
-
-                <a
-                    href="https://svelte.dev/docs/kit/introduction#What-is-Svelte"
-                    target="_blank"
+                </div> -->
+                <div
+                    class="mb-6 rainbow-border animate-rainbow-spin rounded-full w-20"
                 >
                     <img
-                        src="/assets/svelte logo.png"
-                        class="h-full w-full object-contain"
-                        alt="Description"
+                        class="rounded-full border-white"
+                        src="/assets/1763549431722.jpg"
+                        alt=""
                     />
-                </a>
-            </div> -->
+                </div>
+                <div class="mb-5 text-gray-700">
+                    I’m Aravinda, a product designer located in Sri Lanka.
+                    Partnering with companies to create digital interfaces that
+                    play a crucial role in realising their objectives for future
+                    success.
+                </div>
 
-            <div class="mt-10 flex flex-row gap-2">
-                <a
-                    class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                    target="_blank"
-                    href="https://portfolio-9f4.pages.dev/"
-                    >Portfolio</a
+                <div class="mb-5">
+                    <div class="mb-2 text-gray-700 font-medium">
+                        Latest Engagements
+                    </div>
+                    <a
+                        target="_blank"
+                        class="flex justify-between items-center border-b border-gray-200 h-10 hover:border-gray-300 group"
+                        href="https://www.figma.com/proto/DzRSIl93px9xqQg95BTTMM/2026---P1--Vectra---UK?page-id=0%3A1&node-id=1-463&p=f&viewport=497%2C311%2C0.27&t=mx5NGeuqojkCwu3p-1&scaling=contain&content-scaling=responsive&hide-ui=1"
+                    >
+                        <div
+                            class="text-black font-semibold group-hover:underline"
+                        >
+                            Vectra
+                        </div>
+                        <div class="text-gray-500">Product / 2026</div>
+                    </a>
+                    <a
+                        target="_blank"
+                        class="flex justify-between items-center border-b border-gray-200 h-10 group hover:cursor-not-allowed"
+                        href="www.google.com"
+                    >
+                        <div class="text-black font-semibold">
+                            Crest Analytics
+                        </div>
+                        <div class="text-gray-500">Product / WIP</div>
+                    </a>
+                    <a
+                        target="_blank"
+                        class="flex justify-between items-center border-b border-gray-200 h-10 group hover:cursor-not-allowed"
+                        href="www.google.com"
+                    >
+                        <div class="text-black font-semibold">Kinetix</div>
+                        <div class="text-gray-500">Product / WIP</div>
+                    </a>
+                    <a
+                        target="_blank"
+                        class="flex justify-between items-center border-b border-gray-200 h-10 group hover:cursor-not-allowed"
+                        href="www.google.com"
+                    >
+                        <div class="text-black font-semibold">
+                            Veridian Labs
+                        </div>
+                        <div class="text-gray-500">Product / Brainstorming</div>
+                    </a>
+                    <a
+                        target="_blank"
+                        class="flex justify-between items-center border-b border-gray-200 h-10 group hover:cursor-not-allowed"
+                        href="www.google.com"
+                    >
+                        <div class="text-black font-semibold">Aximo</div>
+                        <div class="text-gray-500">Product / Brainstorming</div>
+                    </a>
+                </div>
+                <div
+                    class="flex-1 flex flex-col items-start justify-end min-h-auto"
                 >
-                <a
-                    class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                    target="_blank"
-                    href="https://github.com/apranthilaka"
-                    >Github</a
-                >
-                <a
-                    class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                    target="_blank"
-                    href="https://www.figma.com/@aravinda"
-                    >Figma</a
-                >
-                <a
-                    class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/aravindaprabath/"
-                    >Linkedin</a
-                >
-                <a
-                    class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                    target="_blank"
-                    href="https://x.com/apranthilaka"
-                    >Twitter</a
-                >
+                    <div class="mb-5 text-sm flex flex-row gap-2 w-full">
+                        <a
+                            href="mailto:apranthilaka@outlook.com"
+                            class="bg-blue-500 text-white px-4 h-[32px] flex w-full justify-center items-center rounded-full text-sm transition-all delay-300"
+                        >
+                            Send Email
+                        </a>
+
+                        <a
+                            target="_blank"
+                            href="https://t.me/apranthilaka"
+                            class="hover:bg-gray-100 border border-gray-300 text-gray-800 hover:text-black pl-[8px] pr-4 h-[32px] flex justify-center items-center rounded-full text-sm transition-all duration-200 w-full"
+                        >
+                            <span
+                                ><img
+                                    class="w-[20px] mr-2"
+                                    src="assets/telegram.svg"
+                                    alt=""
+                            /></span>
+                            Telegram
+                        </a>
+
+                        <a
+                            target="_blank"
+                            href=" https://wa.me/94777499801"
+                            class="hover:bg-gray-100 border border-gray-300 text-gray-800 hover:text-black pl-[8px] pr-4 h-[32px] flex justify-center items-center rounded-full text-sm transition-all duration-200 w-full"
+                        >
+                            <span
+                                ><img
+                                    class="w-[25px] mr-2"
+                                    src="assets/whatsapp.svg"
+                                    alt=""
+                            /></span>
+                            Whatsapp
+                        </a>
+                    </div>
+                    <div class="w-full flex justify-between items-center">
+                        <div class="text-sm text-gray-600">
+                            <div
+                                class="text-sm text-gray-600"
+                                id="srilankaTime"
+                            ></div>
+                        </div>
+
+                        <div class="text-gray-500 flex gap-3">
+                            <a
+                                target="_blank"
+                                href="https://x.com/apranthilaka"
+                            >
+                                <i class="ph ph-x-logo text-lg"></i>
+                            </a>
+
+                            <a
+                                target="_blank"
+                                href="https://dribbble.com/aravinda"
+                            >
+                                <i class="ph ph-dribbble-logo text-lg"></i>
+                            </a>
+
+                            <a
+                                target="_blank"
+                                href="https://www.linkedin.com/in/aravindaprabath/"
+                            >
+                                <i class="ph ph-linkedin-logo text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- info  -->
+            <!-- iframe  -->
+            <div class="bg-gray-100 relative md:h-full md:overflow-y-auto">
+                <div
+                    class="absolute inset-0 flex items-center justify-center text-gray-900"
+                >
+                    Loading...
+                </div>
+
+                <iframe
+                    title="iframe"
+                    class="relative border-0"
+                    width="100%"
+                    height="100%"
+                    src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/2026---P1--Vectra---UK?page-id=0%3A1&node-id=1-463&p=f&viewport=497%2C311%2C0.27&scaling=contain&content-scaling=responsive&embed-host=share&hide-ui=1"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <!-- iframe  -->
         </div>
     </body>
 </html>
+
+<script>
+    function updateTime() {
+        const now = new Date().toLocaleString('en-US', {
+            timeZone: 'Asia/Colombo',
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true,
+        });
+        document.getElementById('srilankaTime').textContent = now;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
