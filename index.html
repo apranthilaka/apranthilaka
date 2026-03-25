@@ -34,14 +34,20 @@
     </head>
 
     <body
-        class="h-screen w-full overflow-y-auto md:overflow-hidden bg-neutral-800"
+        class="h-screen w-full overflow-y-auto md:overflow-hidden bg-gray-300"
     >
         <div
-            class="grid max-w-[700px] 2xl:max-w-full 2xl:w-full mx-auto 2xl:grid-cols-[370px_1fr] grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 h-full"
+            id="size-warning"
+            class="block 2xl:hidden bg-red-500 text-white p-3 text-center w-full transition-opacity duration-1000 text-sm"
+        >
+            Please switch to a larger display for the best experience.
+        </div>
+        <div
+            class="grid max-w-[700px] 2xl:max-w-full mx-auto 2xl:grid-cols-[370px_1fr] grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 h-full"
         >
             <!-- info  -->
             <div
-                class="flex flex-col bg-gray-50 p-8 text-sm text-gray-700 min-h-screen w-full bg-size-[120%_50%] bg-no-repeat bg-top bg-[url('../assets/bg.png')] bg-none 2xl:border-r 2xl:border-gray-200 shadow-[-25px_0_50px_-12px_rgba(0,0,0,0.25),25px_0_50px_-12px_rgba(0,0,0,0.25)]"
+                class="flex flex-col bg-gray-50 p-8 text-sm text-gray-700 min-h-screen w-full bg-size-[120%_50%] bg-no-repeat bg-top bg-[url('../assets/bg.png')] bg-none 2xl:border-r 2xl:border-gray-200 shadow-side"
             >
                 <!-- intor  -->
                 <div class="mb-6 w-full flex flex-col items-start gap-3">
@@ -245,4 +251,22 @@
     }
     updateTime();
     setInterval(updateTime, 1000);
+
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        const warning = document.getElementById('size-warning');
+
+        if (warning) {
+            // Start the timer for 5 seconds (5000ms)
+            setTimeout(() => {
+                // First, fade it out using Tailwind's opacity-0
+                warning.classList.add('opacity-0');
+
+                // Then, after the fade animation finishes (1s), remove it from the layout
+                setTimeout(() => {
+                    warning.style.display = 'none';
+                }, 1000);
+            }, 5000);
+        }
+    });
 </script>

@@ -36,3 +36,10 @@
             );
     border: 5px solid transparent;
 }
+
+@theme {
+    /* Default is 96rem (1536px). 
+     Lowering it slightly to 95rem (~1520px) accounts for 
+     Edge's scrollbars and sidebar UI. */
+    --breakpoint-2xl: 95rem;
+}
