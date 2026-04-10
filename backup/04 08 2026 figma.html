@@ -34,14 +34,14 @@
     </head>
 
     <body
-        class="h-screen w-full overflow-y-auto md:overflow-hidden bg-neutral-100"
+        class="h-screen w-full overflow-y-auto md:overflow-hidden bg-gray-300"
     >
         <div
-            class="grid max-w-[700px] 2xl:max-w-full mx-auto 2xl:grid-cols-[370px_1fr] grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 h-full bg-neutral-100"
+            class="grid max-w-[700px] 2xl:max-w-full mx-auto 2xl:grid-cols-[370px_1fr] grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 h-full"
         >
             <!-- info  -->
             <div
-                class="flex flex-col p-8 text-sm text-gray-700 min-h-screen w-full bg-size-[120%_50%] bg-no-repeat bg-top bg-[url('../assets/bg.png')] bg-none 2xl:border-r 2xl:border-gray-200 shadow-side overflow-y-auto modern-scrollbar bg-neutral-100"
+                class="flex flex-col bg-gray-50 p-8 text-sm text-gray-700 min-h-screen w-full bg-size-[120%_50%] bg-no-repeat bg-top bg-[url('../assets/bg.png')] bg-none 2xl:border-r 2xl:border-gray-200 shadow-side overflow-y-auto modern-scrollbar"
             >
                 <div
                     id="size-warning"
@@ -50,7 +50,6 @@
                     Please switch to a larger display for the best experience.
                 </div>
                 <!-- intor  -->
-
                 <div class="mb-6 w-full flex flex-col items-start gap-3">
                     <!-- <div
                         class="rainbow-border animate-rainbow-spin rounded-full w-22"
@@ -62,7 +61,7 @@
                         />
                     </div> -->
                     <div
-                        class="text-lg font-semibold flex items-center gap-2 justify-center"
+                        class="text-gray-700 text-lg font-semibold flex items-center gap-2 justify-center"
                     >
                         <a href="./index.html">
                             <i
@@ -70,15 +69,15 @@
                             ></i>
                         </a>
 
-                        <div class="mb-[2px] text-gray-700">Figma Designs</div>
+                        <div class="mb-[2px]">Figma Designs</div>
                     </div>
 
-                    <div class="text-gray-500">
+                    <div class="text-gray-700 text-sm">
                         Here are some of the design projects I’ve been working
                         on recently.
                     </div>
                     <!-- instructions  -->
-                    <div class="text-xs text-gray-500 italic">
+                    <div class="text-xs text-gray-700 italic">
                         Best viewed on hd (1920px) or larger displays. While
                         fully responsive, smaller screens may hide certain
                         design details and layout elements.
@@ -198,7 +197,9 @@
             <!-- info  -->
 
             <!-- iframe  -->
-            <div class="relative md:h-full md:overflow-y-auto hidden 2xl:block">
+            <div
+                class="bg-gray-200 relative md:h-full md:overflow-y-auto hidden 2xl:block"
+            >
                 <div
                     class="absolute inset-0 flex gap-2 flex-row items-center justify-center text-gray-900 text-normal"
                 >
@@ -208,7 +209,7 @@
 
                 <iframe
                     title="iframe"
-                    class="relative border-0 bg-neutral-100"
+                    class="relative border-0"
                     width="100%"
                     height="100%"
                     src="https://embed.figma.com/proto/Qi1H74TbWbIz71tsI6XBqL/APR-Home-Projects?node-id=1-483&p=f&viewport=204%2C457%2C0.42&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A145&page-id=0%3A1&embed-host=share&hide-ui=1 "

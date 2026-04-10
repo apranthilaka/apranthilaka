@@ -22,22 +22,35 @@
         <link href="./dist/output.css" rel="stylesheet" />
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     </head>
-    <body class="h-screen flex justify-center w-full">
+    <body
+        class="h-screen flex justify-center w-full bg-neutral-100 overflow-hidden"
+    >
         <div
+            id="main-content"
             class="w-[600px] h-full flex flex-col items-center justify-center px-5"
         >
-            <div class="mb-6 rounded-full w-40">
+            <!-- <div
+                class="mb-6 rounded-full w-20 shadow-lg border border-gray-300"
+            >
                 <img
                     class="rounded-full border-white"
                     src="./assets/1763549431722.jpg"
                     alt=""
                 />
-            </div>
-            <div class="mb-10">
-                <div class="font-medium text-gray-800 text-xl text-center">
-                    Less clutter, more character.
+            </div> -->
+            <div
+                class="mb-10 flex flex-col gap-2 max-w-100 fade-in-element opacity-0 translate-y-4 transition-all duration-700 ease-out"
+            >
+                <div class="font-playfair text-6xl text-center">
+                    Less clutter, <br />
+                    more
+                    <span
+                        id="rotating-word"
+                        class="font-playfair text-6xl italic font-black transition-opacity duration-1000"
+                        >character</span
+                    >
                 </div>
-                <div class="text-center max-w-100 mt-1 text-gray-600 text-sm">
+                <div class="text-center mt-1 text-gray-500">
                     My work is built on the idea that simplicity is the most
                     effective way to be unforgettable.
                 </div>
@@ -51,13 +64,13 @@
             </div>
             <!-- contact  -->
             <div
-                class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] box-border h-fit gap-2"
+                class="max-w-125 mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] box-border h-fit gap-2 items-center justify-center fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
             >
                 <a
                     href="./figma.html"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black col-span-2"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md transition-colors duration-300 hover:font-medium col-span-2 bg-neutral-900 text-white"
                 >
-                    Design Portfolio
+                    Product Design Portfolio
                 </a>
                 <!-- <a
                     target="_blank"
@@ -69,44 +82,42 @@
                 <a
                     target="_blank"
                     href="https://dribbble.com/aravinda"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md border-gray-300 hover:border-gray-400 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Dribbble
                 </a>
                 <a
                     target="_blank"
                     href="https://www.linkedin.com/in/aravindaprabath/"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md border-gray-300 hover:border-gray-400 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     <div>Linkedin</div>
                 </a>
                 <a
                     target="_blank"
                     href="https://x.com/apranthilaka"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md border-gray-300 hover:border-gray-400 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     X (Twitter)
                 </a>
-
                 <a
                     target="_blank"
                     href="https://t.me/apranthilaka"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md border-gray-300 hover:border-gray-400 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Telegram
                 </a>
-
                 <a
                     target="_blank"
                     href="https://wa.me/94777499801"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md border-gray-300 hover:border-gray-400 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Whatsapp
                 </a>
                 <a
                     target="_blank"
                     href="mailto:apranthilaka@outlook.com"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-md border-gray-300 hover:border-gray-400 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Send Email
                 </a>
@@ -114,44 +125,12 @@
             <!-- contact  -->
 
             <!-- date and time  -->
-            <div class="flex flex-col items-center justify-center w-full">
+            <div
+                class="flex flex-col items-center justify-center w-full mt-5 fade-in-element"
+            >
                 <div class="text-sm" id="srilankaTime"></div>
             </div>
             <!-- date and time  -->
-
-            <!-- <div class="flex flex-row gap-1">
-                <a
-                    class="text-gray-600 border border-gray-200 hover:border hover:border-white px-5 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 hover:text-gray-950 transition-all delay-75"
-                    target="_blank"
-                    href="https://portfolio-9f4.pages.dev/"
-                    >Portfolio
-                </a>
-                <a
-                    class="text-gray-600 border border-gray-200 hover:border hover:border-white px-5 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 hover:text-gray-950 transition-all delay-75"
-                    target="_blank"
-                    href="https://dribbble.com/aravinda"
-                    >Dribbble</a
-                >
-                <a
-                    class="text-gray-600 border border-gray-200 hover:border hover:border-white px-5 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 hover:text-gray-950 transition-all delay-75"
-                    target="_blank"
-                    href="https://www.figma.com/@aravinda"
-                    >Figma
-                </a>
-
-                <a
-                    class="text-gray-600 border border-gray-200 hover:border hover:border-white px-5 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 hover:text-gray-950 transition-all delay-75"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/aravindaprabath/"
-                    >Linkedin</a
-                >
-                <a
-                    class="text-gray-600 border border-gray-200 hover:border hover:border-white px-5 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 hover:text-gray-950 transition-all delay-75"
-                    target="_blank"
-                    href="https://x.com/apranthilaka"
-                    >Twitter</a
-                >
-            </div> -->
         </div>
     </body>
 </html>
@@ -189,5 +168,36 @@
                 }, 1000);
             }, 5000);
         }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all elements you want to animate
+        const elements = document.querySelectorAll('.fade-in-element');
+
+        elements.forEach((el, index) => {
+            setTimeout(() => {
+                el.classList.remove('opacity-0', 'translate-y-4');
+                el.classList.add('opacity-100', 'translate-y-0');
+            }, index * 150); // 150ms delay between each element
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const wordElement = document.getElementById('rotating-word');
+        const words = ['impact', 'purpose', 'meaning', 'clarity', 'character'];
+        let currentIndex = 0;
+
+        setInterval(() => {
+            // Increment index and loop back to 0 using modulo
+            currentIndex = (currentIndex + 1) % words.length;
+
+            // Simple fade-out and fade-in effect
+            wordElement.style.opacity = 0;
+
+            setTimeout(() => {
+                wordElement.textContent = words[currentIndex];
+                wordElement.style.opacity = 1;
+            }, 500); // Wait for fade out before changing text
+        }, 4000); // 3000ms = 3 seconds
     });
 </script>
