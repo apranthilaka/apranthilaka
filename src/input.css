@@ -3,47 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 @theme {
-    /* 1. Add your custom font here */
     --font-playfair: 'Playfair', serif;
-
-    /* 1. Breakpoints */
-    /* --breakpoint-2xl: 95rem; */
-
-    /* 2. Animations & Keyframes */
-    /* --animate-rainbow-spin: rainbow-spin 3s linear infinite; */
-
-    /* @keyframes rainbow-spin {
-        from {
-            --angle: 0deg;
-        }
-        to {
-            --angle: 360deg;
-        }
-    } */
 }
-
-/* 3. Custom Properties */
-/* @property --angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-} */
-
-/* .rainbow-border {
-    background:
-        padding-box linear-gradient(white, white),
-        border-box
-            conic-gradient(
-                from var(--angle),
-                #0d99ff,
-                #874fff,
-                #ff3737,
-                #ff7237,
-                #24cb71,
-                #0d99ff
-            );
-    border: 5px solid transparent;
-} */
 
 .modern-scrollbar {
     scrollbar-width: thin;
