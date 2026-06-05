@@ -40,22 +40,23 @@
             class="w-[500px] h-full flex flex-col items-center justify-center px-5"
         >
             <div
-                class="mb-10 flex flex-col gap-2 max-w-100 fade-in-element opacity-0 translate-y-4 transition-all duration-700 ease-out"
+                class="mb-10 flex flex-col gap-2 fade-in-element opacity-0 translate-y-4 transition-all duration-700 ease-out w-full"
             >
                 <div
                     class="font-playfair text-6xl text-center text-neutral-900"
                 >
-                    Less clutter, <br />
-                    more
+                    No AI Credits, <br />
+                    More
                     <span
                         id="rotating-word"
                         class="font-playfair text-6xl italic font-black transition-opacity duration-1000 text-neutral-900"
-                        >character</span
+                        >Character</span
                     >
                 </div>
                 <div class="text-center mt-1 text-neutral-900">
-                    My work is built on the idea that simplicity is the most
-                    effective way to be unforgettable.
+                    I use AI as a tool, not the creator. By keeping full human
+                    control to iterate quickly and scale your product, I ensure
+                    superior results, and lower project costs.
                 </div>
             </div>
             <div
@@ -218,7 +219,7 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         const wordElement = document.getElementById('rotating-word');
-        const words = ['impact', 'purpose', 'meaning', 'clarity', 'character'];
+        const words = ['Impact', 'Purpose', 'Meaning', 'Clarity', 'Character'];
         let currentIndex = 0;
 
         setInterval(() => {
