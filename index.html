@@ -37,30 +37,33 @@
     >
         <div
             id="main-content"
-            class="w-[500px] h-full flex flex-col items-center justify-center px-5"
+            class="w-[800px] h-full flex flex-col items-center justify-center px-5"
         >
             <div
-                class="mb-10 flex flex-col gap-2 fade-in-element opacity-0 translate-y-4 transition-all duration-700 ease-out w-full"
+                class="mb-10 flex flex-col gap-2 fade-in-element opacity-0 translate-y-4 transition-all duration-700 ease-out w-full items-center"
             >
                 <div
-                    class="font-playfair text-6xl text-center text-neutral-900"
+                    class="font-playfair text-7xl text-center text-neutral-900"
                 >
-                    No AI Credits, <br />
-                    More
+                    Zero AI Credits,<br />
+                    Maximum
                     <span
                         id="rotating-word"
-                        class="font-playfair text-6xl italic font-black transition-opacity duration-1000 text-neutral-900"
-                        >Character</span
+                        class="font-playfair text-7xl italic font-black transition-opacity duration-1000 text-red-600 underline underline-offset-8"
+                        >Impact</span
                     >
                 </div>
-                <div class="text-center mt-1 text-neutral-900">
-                    I use AI as a tool, not the creator. By keeping full human
-                    control to iterate quickly and scale your product, I ensure
-                    superior results, and lower project costs.
+                <div
+                    class="text-center mt-3 text-neutral-800 w-full md:w-[600px] text-lg"
+                >
+                    Skip the generic AI outputs. I bring human strategy,
+                    stunning aesthetics, and precision speed together to build,
+                    iterate, and launch products designed to sell at a fraction
+                    of the cost.
                 </div>
             </div>
             <div
-                class="mb-10 flex flex-col items-center justify-center fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out w-full *:text-sm *:text-neutral-800"
+                class="mb-10 flex flex-col items-center justify-center fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out *:text-sm *:text-neutral-800 w-full md:w-[500px]"
             >
                 <a
                     class="w-full"
@@ -105,7 +108,7 @@
             </div>
             <!-- contact  -->
             <div
-                class="w-full mb-5 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] box-border h-fit gap-2 items-center justify-center fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
+                class="w-full md:w-[500px] mb-5 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] box-border h-fit gap-2 items-center justify-center fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
             >
                 <!-- <a
                     href="./productdesigngallery.html"
@@ -219,7 +222,13 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         const wordElement = document.getElementById('rotating-word');
-        const words = ['Impact', 'Purpose', 'Meaning', 'Clarity', 'Character'];
+        const words = [
+            'Productivity',
+            'Growth',
+            'Speed',
+            'Scalability',
+            'Impact',
+        ];
         let currentIndex = 0;
 
         setInterval(() => {
