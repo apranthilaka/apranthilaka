@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MonkWork by Aravinda</title>
+        <!-- Tailwind CSS v4 CDN -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+        <style>
+            /* Hide scrollbars globally while keeping scrollability */
+            html,
+            body {
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+            }
+            html::-webkit-scrollbar,
+            body::-webkit-scrollbar {
+                display: none; /* Chrome, Safari, and Opera */
+            }
+
+            /* Keyframes for subtle slow zoom in Lightbox */
+            @keyframes slowZoom {
+                0% {
+                    transform: scale(1);
+                }
+                100% {
+                    transform: scale(1.04);
+                }
+            }
+
+            /* Class applied when lightbox image is loaded */
+            .animate-slow-zoom {
+                animation: slowZoom 12s ease-out forwards;
+            }
+        </style>
+    </head>
+    <body
+        class="bg-white text-zinc-900 transition-colors duration-300 font-sans antialiased min-h-screen flex flex-col items-center"
+    >
+        <!-- Combined Sticky Top Navigation Bar (Header + Sub-Menu) -->
+        <div class="sticky top-0 z-40 w-full">
+            <!-- Unsplash-style Header Bar -->
+            <header
+                id="mainHeader"
+                class="w-full backdrop-blur-md bg-white/90 border-b border-zinc-200 px-4 md:px-8 py-4 flex items-center justify-between transition-colors duration-300"
+            >
+                <!-- Brand Title & Byline -->
+                <div class="flex items-baseline gap-2 md:gap-2.5">
+                    <h1
+                        id="headerTitle"
+                        class="text-lg font-bold tracking-wider uppercase text-zinc-900 transition-colors duration-300 select-none"
+                    >
+                        MonkWork
+                    </h1>
+                    <span
+                        id="headerSubtitle"
+                        class="text-xs font-normal tracking-wide text-zinc-500 transition-colors duration-300 select-none"
+                    >
+                        by Aravinda
+                    </span>
+                </div>
+
+                <!-- Right Actions Container (Instagram, Twitter, Theme Toggle) -->
+                <div class="flex items-center gap-2 md:gap-3">
+                    <!-- Instagram Link -->
+                    <a
+                        href="https://www.instagram.com/monkwork/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="socialInstagram"
+                        class="p-2 rounded-md text-zinc-500 hover:text-zinc-900 transition-colors flex items-center justify-center"
+                        aria-label="Instagram"
+                    >
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- X / Twitter Link -->
+                    <a
+                        href="https://x.com/monkworkstudio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="socialTwitter"
+                        class="p-2 rounded-md text-zinc-500 hover:text-zinc-900 transition-colors flex items-center justify-center"
+                        aria-label="X (Twitter)"
+                    >
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- Dark/Light Theme Toggle Button -->
+                    <button
+                        id="themeToggle"
+                        class="p-2 rounded-md text-zinc-500 hover:text-zinc-900 transition-colors cursor-pointer flex items-center justify-center"
+                        aria-label="Toggle Theme"
+                    >
+                        <!-- Sun Icon (shown when in Dark Mode) -->
+                        <svg
+                            id="sunIcon"
+                            class="w-5 h-5 hidden"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                            />
+                        </svg>
+                        <!-- Moon Icon (shown when in Light Mode) -->
+                        <svg
+                            id="moonIcon"
+                            class="w-5 h-5 block"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Full-Width Left-Aligned Secondary Menu Bar -->
+            <nav
+                id="categoryNavWrapper"
+                class="w-full backdrop-blur-md bg-white/90 border-b border-zinc-200 px-4 md:px-8 transition-colors duration-300"
+            >
+                <div
+                    id="categoryNav"
+                    class="w-full py-3 flex items-center justify-start gap-8 overflow-x-auto text-sm"
+                ></div>
+            </nav>
+        </div>
+
+        <!-- Main Content Container: Constrained to 1320px like Unsplash -->
+        <main class="w-full max-w-[1320px] px-4 md:px-6 py-6 md:py-8">
+            <!-- Unsplash Masonry Layout -->
+            <div
+                id="galleryGrid"
+                class="columns-1 sm:columns-2 md:columns-3 gap-4"
+            ></div>
+        </main>
+
+        <!-- Lightbox Modal -->
+        <div
+            id="lightbox"
+            class="fixed inset-0 hidden items-center justify-center z-50 p-4 transition-colors duration-300 cursor-pointer"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Image Lightbox"
+        >
+            <button
+                id="closeBtn"
+                class="absolute top-6 right-6 text-3xl font-light cursor-pointer z-10 p-2 leading-none"
+                aria-label="Close Lightbox"
+            >
+                &times;
+            </button>
+
+            <!-- Image Wrapper -->
+            <div
+                id="lightboxImgWrapper"
+                class="relative max-w-full max-h-full flex items-center justify-center cursor-pointer overflow-hidden"
+            >
+                <img
+                    id="lightboxImg"
+                    class="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl select-none"
+                    src=""
+                    alt="Expanded View"
+                />
+            </div>
+        </div>
+
+        <script>
+            const IMAGES_FOLDER = './images/';
+            const imageExtensions = /\.(jpg|jpeg|png|webp|gif|svg|avif)$/i;
+
+            // Fixed categories matching folder structure
+            const CATEGORIES = [
+                { id: 'all', label: 'All' },
+                { id: 'portrait', label: 'Portrait' },
+                { id: 'nature', label: 'Nature' },
+                { id: 'animal', label: 'Animal' },
+                { id: 'other', label: 'Other' },
+            ];
+
+            // DOM Elements
+            const galleryGrid = document.getElementById('galleryGrid');
+            const categoryNavWrapper =
+                document.getElementById('categoryNavWrapper');
+            const categoryNav = document.getElementById('categoryNav');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImgWrapper =
+                document.getElementById('lightboxImgWrapper');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const closeBtn = document.getElementById('closeBtn');
+
+            // Theme Elements
+            const themeToggleBtn = document.getElementById('themeToggle');
+            const socialInstagram = document.getElementById('socialInstagram');
+            const socialTwitter = document.getElementById('socialTwitter');
+            const mainHeader = document.getElementById('mainHeader');
+            const headerTitle = document.getElementById('headerTitle');
+            const headerSubtitle = document.getElementById('headerSubtitle');
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const htmlEl = document.documentElement;
+
+            let allImageObjects = [];
+            let activeCategory = 'all';
+            let filteredImages = [];
+            let currentIndex = 0;
+
+            // Fisher-Yates Shuffle Function
+            function shuffleArray(array) {
+                const shuffled = [...array];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                return shuffled;
+            }
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    htmlEl.classList.add('dark');
+                    htmlEl.classList.remove('light');
+                    document.body.className =
+                        'bg-zinc-950 text-zinc-100 transition-colors duration-300 font-sans antialiased min-h-screen flex flex-col items-center';
+
+                    mainHeader.className =
+                        'w-full backdrop-blur-md bg-zinc-950/90 border-b border-zinc-800/60 px-4 md:px-8 py-4 flex items-center justify-between transition-colors duration-300';
+                    categoryNavWrapper.className =
+                        'w-full backdrop-blur-md bg-zinc-950/90 border-b border-zinc-800/60 px-4 md:px-8 transition-colors duration-300';
+                    headerTitle.className =
+                        'text-lg font-bold tracking-wider uppercase text-zinc-100 transition-colors duration-300 select-none';
+                    headerSubtitle.className =
+                        'text-xs font-normal tracking-wide text-zinc-400 transition-colors duration-300 select-none';
+
+                    const darkBtnClass =
+                        'p-2 rounded-md text-zinc-400 hover:text-zinc-100 transition-colors flex items-center justify-center';
+                    themeToggleBtn.className = darkBtnClass + ' cursor-pointer';
+                    socialInstagram.className = darkBtnClass;
+                    socialTwitter.className = darkBtnClass;
+
+                    // Lightbox dark styling
+                    lightbox.className =
+                        'fixed inset-0 bg-zinc-950 hidden items-center justify-center z-50 p-4 transition-colors duration-300 cursor-pointer';
+                    closeBtn.className =
+                        'absolute top-6 right-6 text-zinc-400 hover:text-white text-3xl font-light cursor-pointer z-10 p-2 leading-none';
+
+                    sunIcon.classList.remove('hidden');
+                    moonIcon.classList.add('hidden');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    htmlEl.classList.remove('dark');
+                    htmlEl.classList.add('light');
+                    document.body.className =
+                        'bg-white text-zinc-900 transition-colors duration-300 font-sans antialiased min-h-screen flex flex-col items-center';
+
+                    mainHeader.className =
+                        'w-full backdrop-blur-md bg-white/90 border-b border-zinc-200 px-4 md:px-8 py-4 flex items-center justify-between transition-colors duration-300';
+                    categoryNavWrapper.className =
+                        'w-full backdrop-blur-md bg-white/90 border-b border-zinc-200 px-4 md:px-8 transition-colors duration-300';
+                    headerTitle.className =
+                        'text-lg font-bold tracking-wider uppercase text-zinc-900 transition-colors duration-300 select-none';
+                    headerSubtitle.className =
+                        'text-xs font-normal tracking-wide text-zinc-500 transition-colors duration-300 select-none';
+
+                    const lightBtnClass =
+                        'p-2 rounded-md text-zinc-500 hover:text-zinc-900 transition-colors flex items-center justify-center';
+                    themeToggleBtn.className =
+                        lightBtnClass + ' cursor-pointer';
+                    socialInstagram.className = lightBtnClass;
+                    socialTwitter.className = lightBtnClass;
+
+                    // Lightbox light styling
+                    lightbox.className =
+                        'fixed inset-0 bg-white hidden items-center justify-center z-50 p-4 transition-colors duration-300 cursor-pointer';
+                    closeBtn.className =
+                        'absolute top-6 right-6 text-zinc-500 hover:text-zinc-900 text-3xl font-light cursor-pointer z-10 p-2 leading-none';
+
+                    sunIcon.classList.add('hidden');
+                    moonIcon.classList.remove('hidden');
+                    localStorage.setItem('theme', 'light');
+                }
+                updateCategoryStyles();
+            }
+
+            // Default theme initialization
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            themeToggleBtn.addEventListener('click', () => {
+                const isCurrentlyDark = htmlEl.classList.contains('dark');
+                setTheme(!isCurrentlyDark);
+            });
+
+            // Read a folder and return image links
+            async function fetchFolderImages(folderUrl) {
+                try {
+                    const response = await fetch(folderUrl);
+                    if (!response.ok) return [];
+
+                    const htmlText = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(htmlText, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'))
+                        .map((a) => a.getAttribute('href'))
+                        .filter((href) => href && imageExtensions.test(href));
+
+                    return links.map((href) => {
+                        return href.startsWith('http') || href.startsWith('/')
+                            ? href
+                            : `${folderUrl}${href.replace(/^\.\//, '')}`;
+                    });
+                } catch (err) {
+                    console.error('Error reading folder:', folderUrl, err);
+                    return [];
+                }
+            }
+
+            async function loadGallery() {
+                allImageObjects = [];
+
+                // 1. Fetch images from root /images/ folder
+                const rootImages = await fetchFolderImages(IMAGES_FOLDER);
+                rootImages.forEach((url) => {
+                    allImageObjects.push({ url, category: 'general' });
+                });
+
+                // 2. Fetch images from target category folders
+                const targetFolders = ['portrait', 'nature', 'animal', 'other'];
+                for (const cat of targetFolders) {
+                    const catUrl = `${IMAGES_FOLDER}${cat}/`;
+                    const catImages = await fetchFolderImages(catUrl);
+                    catImages.forEach((url) => {
+                        allImageObjects.push({ url, category: cat });
+                    });
+                }
+
+                // 3. Build Navigation Bar
+                buildCategoryNav();
+
+                // 4. Render Grid
+                renderGrid();
+            }
+
+            function buildCategoryNav() {
+                categoryNav.innerHTML = '';
+
+                CATEGORIES.forEach((cat) => {
+                    const btn = document.createElement('button');
+                    btn.className =
+                        'category-btn cursor-pointer py-1 font-medium capitalize transition-colors';
+                    btn.dataset.category = cat.id;
+                    btn.textContent = cat.label;
+                    categoryNav.appendChild(btn);
+                });
+
+                categoryNav.querySelectorAll('.category-btn').forEach((btn) => {
+                    btn.addEventListener('click', (e) => {
+                        activeCategory = e.target.dataset.category;
+                        updateCategoryStyles();
+                        renderGrid();
+                    });
+                });
+
+                updateCategoryStyles();
+            }
+
+            function updateCategoryStyles() {
+                const isDark = htmlEl.classList.contains('dark');
+                const activeText = isDark
+                    ? 'text-zinc-100 border-zinc-100'
+                    : 'text-zinc-900 border-zinc-900';
+                const inactiveText = isDark
+                    ? 'text-zinc-400 hover:text-zinc-200 border-transparent'
+                    : 'text-zinc-500 hover:text-zinc-800 border-transparent';
+
+                categoryNav.querySelectorAll('.category-btn').forEach((btn) => {
+                    if (btn.dataset.category === activeCategory) {
+                        btn.className = `category-btn cursor-pointer py-1 font-medium capitalize transition-colors border-b-2 ${activeText}`;
+                    } else {
+                        btn.className = `category-btn cursor-pointer py-1 font-medium capitalize transition-colors border-b-2 ${inactiveText}`;
+                    }
+                });
+            }
+
+            function renderGrid() {
+                let rawList = [];
+                if (activeCategory === 'all') {
+                    rawList = allImageObjects.map((obj) => obj.url);
+                } else {
+                    rawList = allImageObjects
+                        .filter((obj) => obj.category === activeCategory)
+                        .map((obj) => obj.url);
+                }
+
+                filteredImages = shuffleArray(rawList);
+                galleryGrid.innerHTML = '';
+
+                filteredImages.forEach((url, index) => {
+                    const card = document.createElement('div');
+                    card.className =
+                        'break-inside-avoid mb-4 overflow-hidden bg-zinc-100 dark:bg-zinc-900 cursor-pointer group focus:outline-none focus:ring-2 focus:ring-zinc-500';
+                    card.tabIndex = 0;
+                    card.role = 'button';
+                    card.setAttribute('aria-label', `View image ${index + 1}`);
+
+                    card.innerHTML = `
+                        <img 
+                          src="${url}" 
+                          loading="lazy" 
+                          alt="MonkWork Photography - Image ${index + 1}"
+                          class="w-full h-auto object-cover block group-hover:scale-[1.01] transition-transform duration-300" 
+                        />
+                      `;
+
+                    card.addEventListener('click', () => openLightbox(index));
+                    card.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            openLightbox(index);
+                        }
+                    });
+                    galleryGrid.appendChild(card);
+                });
+            }
+
+            function updateLightboxImage() {
+                lightboxImg.classList.remove('animate-slow-zoom');
+                void lightboxImg.offsetWidth;
+                lightboxImg.src = filteredImages[currentIndex];
+                lightboxImg.alt = `MonkWork Photography - Image ${currentIndex + 1}`;
+                lightboxImg.classList.add('animate-slow-zoom');
+            }
+
+            function openLightbox(index) {
+                currentIndex = index;
+                updateLightboxImage();
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeLightbox() {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                lightboxImg.classList.remove('animate-slow-zoom');
+                lightboxImg.src = '';
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            function nextImage() {
+                if (filteredImages.length === 0) return;
+                currentIndex = (currentIndex + 1) % filteredImages.length;
+                updateLightboxImage();
+            }
+
+            lightboxImgWrapper.addEventListener('click', (e) => {
+                e.stopPropagation();
+                nextImage();
+            });
+
+            closeBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                closeLightbox();
+            });
+
+            lightbox.addEventListener('click', closeLightbox);
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('hidden')) {
+                    if (e.key === 'Escape') closeLightbox();
+                    if (
+                        e.key === 'ArrowRight' ||
+                        e.key === 'Space' ||
+                        e.key === ' '
+                    ) {
+                        e.preventDefault();
+                        nextImage();
+                    }
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        currentIndex =
+                            (currentIndex - 1 + filteredImages.length) %
+                            filteredImages.length;
+                        updateLightboxImage();
+                    }
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', loadGallery);
+        </script>
+    </body>
+</html>
