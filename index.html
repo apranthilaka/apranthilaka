@@ -31,53 +31,105 @@
         />
         <link href="./dist/output.css" rel="stylesheet" />
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
-        <!-- <link rel="preconnect" href="https://www.figma.com" />
-        <link rel="preconnect" href="https://s3-alpha.figma.com" /> -->
     </head>
     <body
         class="flex justify-center items-center w-full min-h-screen bg-neutral-50 overflow-x-hidden"
     >
         <div
             id="main-content"
-            class="w-150 h-full flex flex-col justify-center p-10"
+            class="w-full max-w-160 h-full flex flex-col justify-center p-10"
         >
             <div
-                class="w-full flex flex-col gap-2 fade-in-element opacity-0 -translate-y-4 transition-all duration-1500 ease-out mb-5"
+                class="w-full flex flex-col gap-2 fade-in-element opacity-0 -translate-y-4 transition-all duration-1500 ease-out mb-10 text-center"
             >
-                <div class="text-neutral-950">
+                <div class="text-neutral-950 mb-4 hidden sm:block">
                     <span
                         id="rotating-word"
-                        class="transition-opacity duration-1000 underline-offset-8 text-5xl font-bold"
+                        class="transition-opacity duration-1000 underline-offset-8 text-6xl font-bold font-playfair"
                     >
                         Solving messy user problems.
                     </span>
                 </div>
-                <div class="mt-2 w-full text-neutral-800">
-                    <span class="font-semibold text-neutral-950">
-                        Hi! I'm Aravinda, a Product Designer (UI/UX)
+
+                <div class="text-neutral-950 mb-4 block sm:hidden">
+                    <span
+                        class="transition-opacity duration-1000 underline-offset-8 text-5xl font-bold font-playfair"
+                    >
+                        Solving messy user problems.
                     </span>
-                    specializing in transforming complex business needs into
-                    intuitive, scalable digital products. Please visit my
+                </div>
+                <div class="w-full text-neutral-800 text-xl">
+                    <span class="font-semibold text-neutral-950">
+                        Hey, I'm Aravinda!
+                    </span>
+                    I'm a product designer who turns complex ideas into seamless
+                    product experiences. Explore my portfolio on
                     <a
-                        href="https://dribbble.com/aravinda/collections"
+                        href="https://dribbble.com/aravinda"
                         target="_blank"
-                        class="underline hover:text-neutral-950 transition-all duration-200"
+                        class="hover:underline hover:text-[#ea4c89] transition-all duration-200 font-medium"
                         >Dribbble</a
                     >
-                    and
-                    <a
-                        href="https://www.figma.com/@aravinda"
-                        target="_blank"
-                        class="underline hover:text-neutral-950 transition-all duration-200"
-                        >Figma</a
-                    >
-                    profiles for a glimpse of my work.
-                    <br />
-                    <br />
+                    and design experiments on
 
-                    <span class="text-base font-normal">
-                        I am currently available for freelance, contract, and
-                        full-time opportunities. Have a project in mind?
+                    <a
+                        href="https://www.instagram.com/aravinda.design/"
+                        target="_blank"
+                        class="hover:underline hover:text-[#ea4c89] transition-all duration-200 font-medium"
+                        >Instagram</a
+                    >.
+                </div>
+            </div>
+
+            <!-- contact  -->
+            <div
+                class="flex items-center justify-center gap-3 flex-row mb-12 fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out text-base font-normal text-neutral-800"
+            >
+                <a
+                    class="text-md inline-flex items-center justify-center rounded-full bg-[#ea4c89] px-5 py-2 font-medium text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#d63d7c] hover:text-white hover:shadow-lg hover:shadow-[#ea4c89]/40 focus:outline-none focus:ring-2 focus:ring-[#ea4c89] focus:ring-offset-2"
+                    href="https://dribbble.com/aravinda"
+                    target="_blank"
+                    >Dribbble</a
+                >
+
+                <a
+                    class="text-md inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] px-5 py-2 font-medium text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-pink-500/30 focus:outline-none focus:ring-2 focus:ring-[#dd2a7b] focus:ring-offset-2"
+                    href="https://www.instagram.com/aravinda.design"
+                    target="_blank"
+                    >Instagram</a
+                >
+
+                <a
+                    class="text-md inline-flex items-center justify-center rounded-full border border-neutral-300 px-5 py-2 font-medium shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:ring-offset-2"
+                    href="https://www.linkedin.com/in/aravindaprabath/"
+                    target="_blank"
+                    >Linkedin</a
+                >
+                <!-- <a
+                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
+                    href="https://x.com/monkworkstudio"
+                    target="_blank"
+                    >Twitter/X</a
+                > -->
+
+                <!-- <a
+                    class="inline-flex items-center justify-center rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:ring-offset-2"
+                    target="_blank"
+                    href="mailto:apranthilaka@gmail.com"
+                >
+                    Email
+                </a> -->
+            </div>
+            <!-- contact  -->
+
+            <div
+                class="flex items-center justify-center gap-1 flex-col fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out text-base font-normal text-neutral-800"
+            >
+                <div>
+                    <span
+                        class="text-base text-no font-normal block text-neutral-800 mb-1 text-center"
+                    >
+                        Have a project in mind?
                         <a
                             class="underline hover:text-neutral-950 transition-all duration-200"
                             target="_blank"
@@ -87,73 +139,31 @@
                         </a>
                     </span>
                 </div>
-            </div>
 
-            <!-- contact  -->
-            <div
-                class="flex flex-row gap-5 mb-3 fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out text-base font-normal text-neutral-800"
-            >
-                <a
-                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
-                    href="https://dribbble.com/aravinda/collections"
-                    target="_blank"
-                    >Dribbble</a
-                >
-
-                <a
-                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
-                    href="https://www.figma.com/@aravinda"
-                    target="_blank"
-                    >Figma</a
-                >
-
-                <a
-                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
-                    href="https://www.linkedin.com/in/aravindaprabath/"
-                    target="_blank"
-                    >Linkedin</a
-                >
-                <a
-                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
-                    href="https://x.com/monkworkstudio"
-                    target="_blank"
-                    >Twitter/X</a
-                >
-
-                <a
-                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
-                    target="_blank"
-                    href="mailto:apranthilaka@gmail.com"
-                >
-                    Email
-                </a>
-            </div>
-            <!-- contact  -->
-
-            <!-- date and time  -->
-            <div
-                class="flex flex-row items-center w-full fade-in-element mb-3 opacity-0 translate-y-4 transition-all duration-1500 ease-out"
-            >
-                <!-- This replaces the 🇱🇰 emoji and works on all devices -->
-                <img
-                    class="mr-4 mt-[1px]"
-                    src="https://flagcdn.com/lk.svg"
-                    alt="Sri Lanka Flag"
-                    style="
-                        display: inline-block;
-                        width: 30px;
-                        height: auto;
-                        vertical-align: middle;
-                        display: inline-block;
-                    "
-                />
-
+                <!-- date and time  -->
                 <div
-                    class="text-base font-normal text-neutral-800"
-                    id="srilankaTime"
-                ></div>
+                    class="flex flex-row justify-center items-center w-full fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
+                >
+                    <img
+                        class="mr-3 mt-px"
+                        src="https://flagcdn.com/lk.svg"
+                        alt="Sri Lanka Flag"
+                        style="
+                            display: inline-block;
+                            width: 25px;
+                            height: auto;
+                            vertical-align: middle;
+                            display: inline-block;
+                        "
+                    />
+
+                    <div
+                        class="text-sm font-normal text-neutral-800"
+                        id="srilankaTime"
+                    ></div>
+                </div>
+                <!-- date and time  -->
             </div>
-            <!-- date and time  -->
         </div>
     </body>
 </html>
