@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- Establish early server connections -->
+        <link rel="preconnect" href="https://embed.figma.com" crossorigin />
+        <link rel="preconnect" href="https://www.figma.com" crossorigin />
+        <link rel="dns-prefetch" href="https://embed.figma.com" />
         <!-- Google tag (gtag.js) -->
         <script
             async
@@ -33,41 +37,20 @@
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     </head>
     <body
-        class="flex justify-center items-center w-full min-h-screen bg-neutral-50 overflow-x-hidden"
+        class="flex flex-col justify-center items-center w-full min-h-screen bg-zinc-950 overflow-x-hidden font-mono text-sm text-neutral-400"
     >
         <div
             id="main-content"
-            class="w-full max-w-160 h-full flex flex-col justify-center p-10"
+            class="w-full max-w-200 h-full flex flex-col justify-center p-10"
         >
             <div
-                class="w-full flex flex-col gap-2 fade-in-element opacity-0 -translate-y-4 transition-all duration-1500 ease-out mb-10 text-center"
+                class="w-full flex flex-col gap-2 fade-in-element opacity-0 -translate-y-4 transition-all duration-1500 ease-out mb-10"
             >
-                <!-- <div class="text-neutral-950 mb-4 hidden sm:block">
+                <div class="w-full">
                     <span
-                        id="rotating-word"
-                        class="transition-opacity duration-1000 underline-offset-8 text-6xl font-bold font-playfair"
+                        class="inline-block font-normal text-lg text-neutral-300 mb-2"
+                        >Hey, I'm Aravinda.</span
                     >
-                        Solving messy user problems.
-                    </span>
-                </div>
-
-                <div class="text-neutral-950 mb-4 block sm:hidden">
-                    <span
-                        class="transition-opacity duration-1000 underline-offset-8 text-5xl font-bold font-playfair"
-                    >
-                        Solving messy user problems.
-                    </span>
-                </div> -->
-
-                <div class="mb-4">
-                    <img
-                        class="mx-auto w-75 h-auto rounded-full"
-                        src="assets/ed35f861be81be2548e514085fb19385.gif"
-                        alt=""
-                    />
-                </div>
-                <div class="w-full text-neutral-800 text-lg">
-                    <span class="font-semibold">Hey, I'm Aravinda</span>
                     <br />Product designer crafting seamless solutions for
                     everyday digital problems. Explore my portfolio on
                     <a
@@ -75,13 +58,13 @@
                         target="_blank"
                         class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
                         >Dribbble</a
-                    >, daily design experiments on
-                    <a
+                    >, design experiments
+                    <!-- <a
                         href="https://www.instagram.com/aravinda.design/"
                         target="_blank"
                         class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
                         >Instagram</a
-                    >
+                    > -->
                     and thoughts on
 
                     <a
@@ -90,71 +73,44 @@
                         class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
                         >Twitter/X</a
                     >.
+
+                    <div class="mt-10">
+                        Available for product design collaborations. <br />
+                        <a
+                            href="https://www.figma.com/proto/bEMBb9KAEZys7sg22SZAve/CV-2026?node-id=1742-395&viewport=-1274%2C1177%2C0.36&t=XzI9Um1PVur4kUeV-8&scaling=scale-down-width&content-scaling=fixed&page-id=732%3A2&hide-ui=1"
+                            target="_blank"
+                            class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
+                            >View my CV</a
+                        >
+                        or find me on
+                        <a
+                            href="https://www.linkedin.com/in/aravindaprabath/"
+                            target="_blank"
+                            class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
+                            >LinkedIn</a
+                        >
+                        to get started.
+                    </div>
                 </div>
             </div>
 
-            <!-- contact  -->
-            <!-- <div
-                class="flex items-center justify-center gap-3 flex-row mb-12 fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out text-base font-normal text-neutral-800"
-            > -->
-            <!-- <a
-                    class="text-md inline-flex items-center justify-center rounded-full bg-[#ea4c89] px-5 py-2 font-medium text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#d63d7c] hover:text-white hover:shadow-lg hover:shadow-[#ea4c89]/40 focus:outline-none focus:ring-2 focus:ring-[#ea4c89] focus:ring-offset-2"
-                    href="https://dribbble.com/aravinda"
-                    target="_blank"
-                    >Projects</a
-                > -->
-
-            <!-- <a
-                    class="text-md inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] px-5 py-2 font-medium text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-pink-500/30 focus:outline-none focus:ring-2 focus:ring-[#dd2a7b] focus:ring-offset-2"
-                    href="https://www.instagram.com/aravinda.design"
-                    target="_blank"
-                    >Work in Progress</a
-                > -->
-
-            <!-- <a
-                    class="text-md inline-flex items-center justify-center rounded-full border border-neutral-300 px-5 py-2 font-medium shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:ring-offset-2"
-                    href="https://www.linkedin.com/in/aravindaprabath/"
-                    target="_blank"
-                    >Linkedin</a
-                > -->
-            <!-- <a
-                    class="hover:underline hover:text-neutral-950 transition-all duration-200"
-                    href="https://x.com/monkworkstudio"
-                    target="_blank"
-                    >Twitter/X</a
-                > -->
-
-            <!-- <a
-                    class="inline-flex items-center justify-center rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:ring-offset-2"
-                    target="_blank"
-                    href="mailto:apranthilaka@gmail.com"
-                >
-                    Email
-                </a> -->
-            <!-- </div> -->
-            <!-- contact  -->
-
+            <!-- Lets connect  -->
             <div
-                class="flex items-center justify-center gap-1 flex-col fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out text-base font-normal text-neutral-800"
+                class="gap-1 flex-col fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out text-base font-normal"
             >
-                <div>
-                    <span
-                        class="text-base text-no font-normal block text-neutral-800 text-center"
+                <div class="mb-1">
+                    <a
+                        class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
+                        target="_blank"
+                        href="mailto:apranthilaka@gmail.com"
                     >
-                        Looking to collaborate?
-                        <a
-                            class="underline hover:text-neutral-950 transition-all duration-200"
-                            target="_blank"
-                            href="mailto:apranthilaka@gmail.com"
-                        >
-                            Let's connect!
-                        </a>
-                    </span>
+                        Let's connect!
+                    </a>
                 </div>
 
                 <!-- date and time  -->
                 <div
-                    class="flex flex-col justify-center items-center w-full fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
+                    class="items-center w-full fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
                 >
                     <!-- <img
                         class="mr-3 mt-px"
@@ -169,16 +125,78 @@
                         "
                     /> -->
 
-                    <div
-                        class="text-sm font-normal text-neutral-800"
-                        id="srilankaTime"
-                    ></div>
-                    <div class="text-sm font-normal text-neutral-50">
+                    <div class="text-sm font-normal" id="srilankaTime"></div>
+                    <div class="text-sm font-normal text-zinc-950">
                         @apranthilaka
                     </div>
                 </div>
                 <!-- date and time  -->
             </div>
+            <!-- Lets connect  -->
+
+            <!-- project grid  -->
+            <section
+                class="w-full mt-10 fade-in-element opacity-0 translate-y-4 transition-all duration-1500 ease-out"
+            >
+                <div
+                    class="mb-4 text-[10px] uppercase tracking-[0.25em] text-neutral-500"
+                >
+                    Latest projects
+                </div>
+                <div
+                    class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(170px,1fr))]"
+                >
+                    <a
+                        href="https://www.figma.com/proto/tKDfSRRr3l5pawLmq6nuKr/Dashboard-Components?node-id=3431-9876&viewport=-664%2C1105%2C0.31&t=1NoZz5q7EE2b7Nxg-8&scaling=contain&content-scaling=responsive&page-id=0%3A1&hide-ui=1"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="group block cursor-pointer rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 transition-all duration-200 hover:border-[#ea4c89]/60 hover:bg-neutral-900"
+                    >
+                        <div
+                            class="relative mb-4 aspect-4/3 overflow-hidden rounded-lg bg-neutral-800"
+                        >
+                            <!-- Optimized Iframe -->
+                            <iframe
+                                loading="eager"
+                                fetchpriority="high"
+                                class="h-full w-full object-cover border-none pointer-events-none"
+                                src="https://embed.figma.com/proto/tKDfSRRr3l5pawLmq6nuKr/Dashboard-Components?node-id=3222-1368&viewport=473%2C788%2C0.18&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3431%3A9876&page-id=0%3A1&embed-host=share&hide-ui=1"
+                                allowfullscreen
+                            ></iframe>
+                            <!-- Overlay to ensure hand pointer and clickability -->
+                            <div class="absolute inset-0 z-10"></div>
+                        </div>
+
+                        <div class="text-sm font-medium text-neutral-200">
+                            Hire Me Modules.
+                        </div>
+                        <div class="mt-1 text-xs text-neutral-500">
+                            Corporate / SaaS / UI
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.figma.com/proto/qYqpy0QsVtUZJVo7zASH7W/Outdoor-Activity-screens?node-id=5110-1655&p=f&viewport=637%2C931%2C0.13&t=7OyVcpAATklzykmu-8&scaling=contain&content-scaling=responsive&starting-point-node-id=5110%3A1655&page-id=0%3A1&hide-ui=1"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="group block rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 transition-all duration-200 hover:border-[#ea4c89]/60 hover:bg-neutral-900"
+                    >
+                        <div class="mb-4 aspect-4/3 overflow-hidden rounded-lg">
+                            <iframe
+                                class="h-full w-full object-cover border-none"
+                                src="https://embed.figma.com/proto/qYqpy0QsVtUZJVo7zASH7W/Outdoor-Activity-screens?node-id=5302-3219&viewport=630%2C1713%2C0.25&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=5110%3A1655&page-id=0%3A1&embed-host=share&hide-ui=1"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="text-sm font-medium text-neutral-200">
+                            Hike Buddy - Screens.
+                        </div>
+                        <div class="mt-1 text-xs text-neutral-500">
+                            Client / SaaS / PD
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- project grid   -->
         </div>
     </body>
 </html>
