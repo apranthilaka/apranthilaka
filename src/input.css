@@ -1,17 +1,17 @@
 @import 'tailwindcss';
 
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 @theme {
-    /* --font-playfair: 'Playfair', serif;
-    --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif; */
-    --font-mono:
+    --font-playfair: 'Playfair', serif;
+    --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+    /* --font-mono:
         'Space Grotesk', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        'Liberation Mono', 'Courier New', monospace;
+        'Liberation Mono', 'Courier New', monospace; */
     --animate-hourglass-flip: flip 6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 
     @keyframes flip {
