@@ -22,6 +22,33 @@
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@apranthilaka" />
+        <meta name="twitter:title" content="Hi! I'm Aravinda - @apranthilaka" />
+        <meta
+            name="twitter:description"
+            content="Product design for AI, SaaS/B2B and enterprise software. Turning complex workflows into clear, effortless products."
+        />
+        <meta
+            name="twitter:image"
+            content="https://apranthilaka.com/assets/twitter-image.png"
+        />
+
+        <!-- Open Graph Meta Tags (For LinkedIn, Facebook, and Discord) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://apranthilaka.com" />
+        <meta property="og:title" content="Hi! I'm Aravinda - @apranthilaka" />
+        <meta
+            property="og:description"
+            content="Product design for AI, SaaS/B2B and enterprise software. Turning complex workflows into clear, effortless products."
+        />
+        <meta
+            property="og:image"
+            content="https://apranthilaka.com/assets/og-image.png"
+        />
+
         <title>Hi! I'm Aravinda - @apranthilaka</title>
         <link
             rel="stylesheet"
@@ -40,74 +67,130 @@
         class="flex flex-col items-center w-full min-h-screen bg-white overflow-x-hidden font-sans text-sm text-black antialiased p-10 lg:p-15"
     >
         <div id="main-content" class="w-full h-full flex flex-col">
-            <!-- text wrapper  -->
-            <div class="max-w-150">
-                <span
-                    class="inline-block font-medium text-neutral-950 mb-3 text-lg"
-                    >Hey, I'm Aravinda. <br />
-                    <span class="font-normal text-base italic"
-                        >Product design for AI, SaaS and enterprise
-                        software.</span
+            <div
+                class="flex flex-col lg:flex-row gap-1 lg:gap-20 items-start justify-between w-full"
+            >
+                <!-- text wrapper  -->
+                <div class="max-w-150">
+                    <span
+                        class="inline-block font-medium text-neutral-950 mb-3 text-3xl font-playfair"
+                        >Hey, I'm Aravinda. <br />
+                    </span>
+                    <br />
+                    <span class="inline-block mb-5 text-base"
+                        >I'm a Sri Lanka-based freelance product designer
+                        focused on AI, B2B SaaS, and Enterprise Software.
+                        Currently available for select projects and
+                        collaborations.</span
                     >
-                </span>
-                <br />
-                Explore my latest projects below, view my portfolio on
-                <a
-                    href="https://dribbble.com/aravinda"
-                    target="_blank"
-                    class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2 inline-block"
-                    >Dribbble</a
-                >
-                or follow design updates on
-
-                <a
-                    href="https://x.com/apranthilaka"
-                    target="_blank"
-                    class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
-                    >Twitter/X</a
-                >. Available for product design collaborations.
-                <a
-                    href="https://www.figma.com/proto/bEMBb9KAEZys7sg22SZAve/CV-2026?node-id=1742-395&viewport=-1274%2C1177%2C0.36&t=XzI9Um1PVur4kUeV-8&scaling=scale-down-width&content-scaling=fixed&page-id=732%3A2&hide-ui=1"
-                    target="_blank"
-                    class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
-                    >View my CV</a
-                >
-                or find me on
-                <a
-                    href="https://www.linkedin.com/in/aravindaprabath/"
-                    target="_blank"
-                    class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
-                    >LinkedIn</a
-                >.
-
-                <!-- date and time and lets connect   -->
-                <div class="items-center w-full mt-5">
+                    Explore my latest projects below, view my portfolio on
                     <a
-                        class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2 mb-1 inline-block"
+                        href="https://dribbble.com/aravinda"
                         target="_blank"
-                        href="mailto:apranthilaka@gmail.com"
+                        class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2 inline-block"
+                        >Dribbble</a
                     >
-                        Let's connect!
-                    </a>
-                    <div class="text-sm font-normal" id="srilankaTime"></div>
-                    <div class="text-sm font-normal text-white">
+                    or follow design updates on
+
+                    <a
+                        href="https://x.com/apranthilaka"
+                        target="_blank"
+                        class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
+                        >Twitter/X.</a
+                    >
+                    View my
+                    <a
+                        href="https://www.figma.com/proto/bEMBb9KAEZys7sg22SZAve/CV-2026?node-id=1742-395&viewport=-1274%2C1177%2C0.36&t=XzI9Um1PVur4kUeV-8&scaling=scale-down-width&content-scaling=fixed&page-id=732%3A2&hide-ui=1"
+                        target="_blank"
+                        class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
+                        >CV</a
+                    >
+                    for work experience or find me on
+                    <a
+                        href="https://www.linkedin.com/in/aravindaprabath/"
+                        target="_blank"
+                        class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2"
+                        >LinkedIn.</a
+                    >
+                    <div
+                        class="flex flex-row align-middle gap-2 items-center mt-5"
+                    >
+                        <div class="text-green-700">
+                            🟢 Available for Projects -
+                        </div>
+                        <div
+                            class="text-xs font-normal"
+                            id="srilankaTime"
+                        ></div>
+                    </div>
+
+                    <!-- date and time and lets connect   -->
+                    <!-- <div class="items-center w-full mt-5">
+                        Building something interesting?
                         <a
-                            href="https://www.google.com/search?q=apranthilaka&rlz=1C1ONGR_enLK1220LK1220&oq=apranthilaka&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGEEyBggCEEUYPDIJCAMQABgNGIAEMhIIBBAuGA0YrwEYxwEYgAQYmAUyBggFEEUYQTIGCAYQRRg8MgYIBxBFGEHSAQg1NTE5ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8"
-                            >@apranthilaka</a
+                            class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2 mb-1 inline-block"
+                            target="_blank"
+                            href="mailto:apranthilaka@gmail.com"
                         >
+                            Let's connect!
+                        </a>
+                        <div
+                            class="text-sm font-normal"
+                            id="srilankaTime"
+                        ></div>
+                        <div class="text-sm font-normal text-white">
+                            <a
+                                href="https://www.google.com/search?q=apranthilaka&rlz=1C1ONGR_enLK1220LK1220&oq=apranthilaka&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGEEyBggCEEUYPDIJCAMQABgNGIAEMhIIBBAuGA0YrwEYxwEYgAQYmAUyBggFEEUYQTIGCAYQRRg8MgYIBxBFGEHSAQg1NTE5ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8"
+                                >@apranthilaka</a
+                            >
+                        </div>
+                    </div> -->
+                    <!-- date and time and lets connect   -->
+                </div>
+                <!-- text wrapper  -->
+
+                <!-- whatsapp telegram  -->
+                <div
+                    class="flex flex-col flex-wrap gap-2 justify-start lg:justify-end align-top mt-5 lg:mt-0"
+                >
+                    <div>
+                        Building something interesting?
+                        <a
+                            class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2 mb-1 inline-block"
+                            target="_blank"
+                            href="mailto:apranthilaka@gmail.com"
+                        >
+                            Let's connect!
+                        </a>
+                    </div>
+                    <div
+                        class="flex flex-row gap-2 justify-start lg:justify-end align-top"
+                    >
+                        <a
+                            target="_blank"
+                            href="https://wa.me/94777499801"
+                            class="w-full lg:w-auto inline-flex items-center justify-center rounded-full border border-neutral-200 bg-green-500 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:border-green-700 hover:bg-green-600"
+                        >
+                            Whatsapp
+                        </a>
+                        <a
+                            href="https://t.me/apranthilaka"
+                            target="_blank"
+                            class="w-full lg:w-auto inline-flex items-center justify-center rounded-full border border-neutral-200 bg-sky-500 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:border-sky-700 hover:bg-sky-600"
+                        >
+                            Telegram
+                        </a>
                     </div>
                 </div>
-                <!-- date and time and lets connect   -->
+                <!-- whatsapp telegram  -->
             </div>
-
-            <!-- text wrapper  -->
 
             <!-- project grid  -->
             <section class="w-full mt-10">
                 <div
-                    class="mb-4 text-[10px] uppercase tracking-[0.1em] text-neutral-500"
+                    class="mb-4 text-[10px] uppercase tracking-[0.07em] text-neutral-500"
                 >
-                    Latest projects
+                    Ongoing projects and Concepts. Click to view in Figma.
                 </div>
                 <div
                     class="grid gap-4 lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(700px,1fr))]"
@@ -142,7 +225,7 @@
                     </a>
 
                     <a
-                        href="https://www.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/Ai----SaaS?node-id=5003-1507&viewport=-919%2C-3457%2C0.9&t=NViVAsF6RhGi4qvD-8&scaling=contain&content-scaling=responsive&page-id=5003%3A555&starting-point-node-id=5003%3A1502&hide-ui=1"
+                        href="https://www.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Screens?node-id=5426-2294&viewport=-1289%2C557%2C0.23&t=nzKWL9tptHLl4naj-8&scaling=contain&content-scaling=responsive&starting-point-node-id=5003%3A1502&page-id=5003%3A555&hide-ui=1"
                         target="_blank"
                         rel="noreferrer"
                         class="group block cursor-pointer border rounded-md border-neutral-200 bg-neutral-50 p-4 transition-all duration-200 hover:border-neutral-400 hover:bg-neutral-100"
@@ -163,7 +246,7 @@
                         </div>
 
                         <div class="text-sm font-medium text-neutral-950">
-                            Kaleora - Ai Audit
+                            Kaleora - AI Audit
                         </div>
                         <div class="mt-1 text-xs text-neutral-500">
                             Concept / SaaS / PD
