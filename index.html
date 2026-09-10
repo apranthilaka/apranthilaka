@@ -66,12 +66,9 @@
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     </head>
     <body
-        class="flex flex-col items-center w-full min-h-screen bg-white overflow-x-hidden font-sans text-sm text-black antialiased p-10 lg:p-15"
+        class="flex flex-col items-center w-full min-h-screen bg-slate-50 overflow-x-hidden font-sans text-sm text-black antialiased p-10 lg:p-5"
     >
-        <div
-            id="main-content"
-            class="w-full max-w-[1440px] h-full flex flex-col"
-        >
+        <div id="main-content" class="w-full h-full flex flex-col">
             <div
                 class="flex flex-col lg:flex-row gap-1 lg:gap-20 items-start justify-between w-full"
             >
@@ -87,9 +84,7 @@
                     <span class="inline-block mb-5 text-base"
                         >I'm a Sri Lanka-based freelance product designer
                         focused on AI, SaaS, B2B and Enterprise Software.
-                        Currently available for select projects and
-                        collaborations.</span
-                    >
+                    </span>
                     Explore my latest projects below, view my portfolio on
                     <a
                         href="https://dribbble.com/aravinda"
@@ -122,37 +117,19 @@
                     <div
                         class="flex flex-row align-middle gap-2 items-center mt-5"
                     >
-                        <div class="text-green-700">
-                            🟢 Available for Projects -
+                        <div
+                            class="text-green-700 flex flex-row justify-center gap-1"
+                        >
+                            <i
+                                class="ph-fill ph-check-circle text-base m-0 p-0 text-green-600 inline-flex justify-center items-center"
+                            ></i>
+                            <span>Available for Projects - </span>
                         </div>
                         <div
                             class="text-xs font-normal"
                             id="srilankaTime"
                         ></div>
                     </div>
-
-                    <!-- date and time and lets connect   -->
-                    <!-- <div class="items-center w-full mt-5">
-                        Building something interesting?
-                        <a
-                            class="hover:text-[#ea4c89] transition-all duration-200 underline underline-offset-2 mb-1 inline-block"
-                            target="_blank"
-                            href="mailto:apranthilaka@gmail.com"
-                        >
-                            Let's connect!
-                        </a>
-                        <div
-                            class="text-sm font-normal"
-                            id="srilankaTime"
-                        ></div>
-                        <div class="text-sm font-normal text-white">
-                            <a
-                                href="https://www.google.com/search?q=apranthilaka&rlz=1C1ONGR_enLK1220LK1220&oq=apranthilaka&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGEEyBggCEEUYPDIJCAMQABgNGIAEMhIIBBAuGA0YrwEYxwEYgAQYmAUyBggFEEUYQTIGCAYQRRg8MgYIBxBFGEHSAQg1NTE5ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8"
-                                >@apranthilaka</a
-                            >
-                        </div>
-                    </div> -->
-                    <!-- date and time and lets connect   -->
                 </div>
                 <!-- text wrapper  -->
 
@@ -193,310 +170,192 @@
             </div>
 
             <!-- project grid  -->
-            <section class="w-full mt-10">
-                <!-- <div
-                    class="mb-4 text-[10px] uppercase tracking-[0.07em] text-neutral-500"
-                >
-                    Ongoing projects and Concepts. Click to view in Figma.
-                </div> -->
+            <section class="w-full mt-20">
                 <div
-                    class="grid gap-4 lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))]"
+                    class="grid gap-22 lg:grid-cols-[repeat(auto-fit,minmax(auto,1fr))]"
                 >
-                    <a
-                        href="https://www.figma.com/proto/OiECY5HRCcUmrRlP5ZVQXa/DS3-Designs?node-id=2-399&viewport=722%2C413%2C0.49&t=tz6gVuDCVikZbEqq-8&scaling=contain&content-scaling=responsive&page-id=0%3A1&hide-ui=1"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="group block cursor-pointer border border-neutral-200 bg-neutral-50 transition-all hover:border-neutral-300 hover:bg-neutral-100 hover:scale-[1.02] transform duration-200"
-                    >
+                    <!-- project 1  -->
+                    <div>
+                        <!-- title bar  -->
                         <div
-                            class="relative aspect-4/3 overflow-hidden bg-neutral-200"
+                            class="pb-5 flex flex-row justify-between items-center"
                         >
-                            <!-- Loading Spinner -->
-                            <div
-                                class="loader absolute inset-0 flex items-center justify-center bg-neutral-200 z-20"
-                            >
-                                <svg
-                                    class="w-8 h-8 text-neutral-400 animate-spin"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
+                            <div>
+                                <div
+                                    class="text-base font-medium text-neutral-950"
                                 >
-                                    <circle
-                                        class="opacity-25"
-                                        cx="12"
-                                        cy="12"
-                                        r="10"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                    ></circle>
-                                    <path
-                                        class="opacity-75"
-                                        fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                                    ></path>
-                                </svg>
+                                    Metaful - Permision manager for teams and
+                                    agents
+                                </div>
+                                <div
+                                    class="mt-1 text-xs text-neutral-500 flex items-center gap-1"
+                                >
+                                    <img
+                                        class="w-[15px] h-auto inline-block"
+                                        src="./assets/wip.gif"
+                                        alt=""
+                                    />
+                                    R&D / Client / SaaS / Product Design
+                                </div>
                             </div>
-                            <!-- Optimized Iframe -->
+                            <div
+                                class="max-[1919px]:inline-flex hidden text-xs text-neutral-500 text-right gap-1"
+                            >
+                                <i
+                                    class="ph-fill ph-warning-circle text-base m-0 p-0 text-red-600 inline-flex justify-center items-center"
+                                ></i>
+
+                                <span>Screen is too small.</span>
+                                <span>Click full-screen bellow.</span>
+                            </div>
+
+                            <div
+                                class="max-[1919px]:hidden text-sm text-neutral-500 text-right flex flex-row justify-center gap-1"
+                            >
+                                <i
+                                    class="ph-fill ph-check-circle text-base m-0 p-0 text-green-600 inline-flex justify-center items-center"
+                                ></i>
+                                <span>Everything looks good</span>
+                            </div>
+                        </div>
+                        <!-- title bar  -->
+                        <div
+                            class="relative aspect-4/2 overflow-hidden bg-neutral-200 border border-neutral-300"
+                        >
                             <iframe
                                 loading="eager"
                                 fetchpriority="high"
-                                class="h-full w-full object-cover border-none pointer-events-none border-0 shadow-none"
-                                src="https://embed.figma.com/proto/OiECY5HRCcUmrRlP5ZVQXa/DS3-Designs?node-id=2-479&viewport=722%2C413%2C0.49&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&embed-host=share&hide-ui=1"
+                                class="h-full w-full object-cover border-none border-0 shadow-none"
+                                src="https://embed.figma.com/proto/OiECY5HRCcUmrRlP5ZVQXa/DS3-Designs?page-id=0%3A1&node-id=2-479&viewport=-1452%2C521%2C0.18&scaling=contain&content-scaling=responsive&starting-point-node-id=2%3A399&embed-host=share"
                                 allowfullscreen
-                                onload="
-                                    this.previousElementSibling.style.display =
-                                        'none'
-                                "
                             ></iframe>
-                            <!-- Overlay to ensure hand pointer and clickability -->
-                            <div class="absolute inset-0 z-10"></div>
                         </div>
+                    </div>
+                    <!-- project 1  -->
+                    <div class="text-neutral-300">
+                        <hr
+                            class="border-t-2 border-dotted border-gray-300 my-4"
+                        />
+                    </div>
+                    <!-- project 2  -->
 
-                        <div class="p-4">
-                            <div class="text-sm font-medium text-neutral-950">
-                                Metaful -
-                                <span>[WIP]</span> Permision for teams and
-                                agents
+                    <div>
+                        <!-- title bar  -->
+                        <div
+                            class="pb-5 flex flex-row justify-between items-center"
+                        >
+                            <div>
+                                <div
+                                    class="text-base font-medium text-neutral-950"
+                                >
+                                    Obrand - Work In Progress
+                                </div>
+
+                                <div
+                                    class="mt-1 text-xs text-neutral-500 flex items-center gap-1"
+                                >
+                                    <img
+                                        class="w-[15px] h-auto inline-block"
+                                        src="./assets/wip.gif"
+                                        alt=""
+                                    />
+                                    Work in Progress / Concept / SaaS / Product
+                                    Design
+                                </div>
                             </div>
-                            <div class="mt-1 text-xs text-neutral-500">
-                                Concept / SaaS / Product Design
+
+                            <div
+                                class="max-[1919px]:inline-flex hidden text-xs text-neutral-500 text-right gap-1"
+                            >
+                                <i
+                                    class="ph-fill ph-warning-circle text-base m-0 p-0 text-red-600 inline-flex justify-center items-center"
+                                ></i>
+
+                                <span>Screen is too small.</span>
+                                <span>Click full-screen bellow.</span>
+                            </div>
+
+                            <div
+                                class="max-[1919px]:hidden text-sm text-neutral-500 text-right flex flex-row justify-center gap-1"
+                            >
+                                <i
+                                    class="ph-fill ph-check-circle text-base m-0 p-0 text-green-600 inline-flex justify-center items-center"
+                                ></i>
+                                <span>Everything looks good</span>
                             </div>
                         </div>
-                    </a>
-                    <a
-                        href="https://www.figma.com/proto/ocyYU4bx5pCngMb18JZxqw/Design-Opt-2?page-id=0%3A1&node-id=7002-249&viewport=-567%2C270%2C0.37&t=PvMt85M2PjX0D2jr-8&scaling=contain&content-scaling=responsive&hide-ui=1"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="group block cursor-pointer border border-neutral-200 bg-neutral-50 transition-all hover:border-neutral-300 hover:bg-neutral-100 hover:scale-[1.02] transform duration-200"
-                    >
+                        <!-- title bar  -->
                         <div
-                            class="relative aspect-4/3 overflow-hidden bg-neutral-200"
+                            class="relative aspect-4/2 overflow-hidden bg-neutral-200 border border-neutral-300"
                         >
-                            <!-- Loading Spinner -->
-                            <div
-                                class="loader absolute inset-0 flex items-center justify-center bg-neutral-200 z-20"
-                            >
-                                <svg
-                                    class="w-8 h-8 text-neutral-400 animate-spin"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <circle
-                                        class="opacity-25"
-                                        cx="12"
-                                        cy="12"
-                                        r="10"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                    ></circle>
-                                    <path
-                                        class="opacity-75"
-                                        fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <!-- Optimized Iframe -->
                             <iframe
                                 loading="eager"
                                 fetchpriority="high"
-                                class="h-full w-full object-cover border-none pointer-events-none border-0 shadow-none"
-                                src="https://embed.figma.com/proto/ocyYU4bx5pCngMb18JZxqw/DS2---Screens?node-id=7583-3004&viewport=-170%2C729%2C0.23&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&embed-host=share&hide-ui=1"
+                                class="h-full w-full object-cover border-none border-0 shadow-none"
+                                src="https://embed.figma.com/proto/ocyYU4bx5pCngMb18JZxqw/DS2---Designs?node-id=7583-3004&viewport=138%2C391%2C0.17&scaling=contain&content-scaling=responsive&starting-point-node-id=7002%3A249&page-id=0%3A1&embed-host=share"
                                 allowfullscreen
-                                onload="
-                                    this.previousElementSibling.style.display =
-                                        'none'
-                                "
                             ></iframe>
-                            <!-- Overlay to ensure hand pointer and clickability -->
-                            <div class="absolute inset-0 z-10"></div>
                         </div>
+                    </div>
+                    <!-- project 2  -->
 
-                        <div class="p-4">
-                            <div class="text-sm font-medium text-neutral-950">
-                                Obrand - Work In Progress
-                            </div>
-                            <div class="mt-1 text-xs text-neutral-500">
-                                Concept / SaaS / Product Design
-                            </div>
-                        </div>
-                    </a>
+                    <div class="text-neutral-300">
+                        <hr
+                            class="border-t-2 border-dotted border-gray-300 my-4"
+                        />
+                    </div>
 
-                    <a
-                        href="https://www.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Screens?node-id=5426-2294&viewport=-1289%2C557%2C0.23&t=nzKWL9tptHLl4naj-8&scaling=contain&content-scaling=responsive&starting-point-node-id=5003%3A1502&page-id=5003%3A555&hide-ui=1"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="group block cursor-pointer border border-neutral-200 bg-neutral-50 transition-all duration-200 hover:border-neutral-300 hover:bg-neutral-100 hover:scale-[1.02] transform"
-                    >
+                    <!-- project 3  -->
+
+                    <div>
+                        <!-- title bar  -->
                         <div
-                            class="relative aspect-4/3 overflow-hidden bg-neutral-200"
+                            class="pb-5 flex flex-row justify-between items-center"
                         >
-                            <!-- Loading Spinner -->
-                            <div
-                                class="loader absolute inset-0 flex items-center justify-center bg-neutral-200 z-20"
-                            >
-                                <svg
-                                    class="w-8 h-8 text-neutral-400 animate-spin"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
+                            <div>
+                                <div
+                                    class="text-base font-medium text-neutral-950"
                                 >
-                                    <circle
-                                        class="opacity-25"
-                                        cx="12"
-                                        cy="12"
-                                        r="10"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                    ></circle>
-                                    <path
-                                        class="opacity-75"
-                                        fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                                    ></path>
-                                </svg>
+                                    Kaleora - AI Audit
+                                </div>
+                                <div class="mt-1 text-xs text-neutral-500">
+                                    Concept / SaaS / Product Design
+                                </div>
                             </div>
-                            <!-- Optimized Iframe -->
+                            <div
+                                class="max-[1919px]:inline-flex hidden text-xs text-neutral-500 text-right gap-1"
+                            >
+                                <i
+                                    class="ph-fill ph-warning-circle text-base m-0 p-0 text-red-600 inline-flex justify-center items-center"
+                                ></i>
+
+                                <span>Screen is too small.</span>
+                                <span>Click full-screen bellow.</span>
+                            </div>
+
+                            <div
+                                class="max-[1919px]:hidden text-sm text-neutral-500 text-right flex flex-row justify-center gap-1"
+                            >
+                                <i
+                                    class="ph-fill ph-check-circle text-base m-0 p-0 text-green-600 inline-flex justify-center items-center"
+                                ></i>
+                                <span>Everything looks good</span>
+                            </div>
+                        </div>
+                        <!-- title bar  -->
+                        <div
+                            class="relative aspect-4/2 overflow-hidden bg-neutral-200 border border-neutral-300"
+                        >
                             <iframe
                                 loading="eager"
                                 fetchpriority="high"
-                                class="h-full w-full object-cover border-none pointer-events-none border-0 shadow-none"
-                                src="https://embed.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Screens?node-id=5466-588&viewport=-3026%2C580%2C0.38&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=5003%3A1502&page-id=5003%3A555&embed-host=share&hide-ui=1"
+                                class="h-full w-full object-cover border-none border-0 shadow-none"
+                                src="https://embed.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Designs?node-id=5466-588&viewport=-435%2C515%2C0.37&scaling=contain&content-scaling=responsive&starting-point-node-id=5003%3A1502&page-id=5003%3A555&embed-host=share"
                                 allowfullscreen
-                                onload="
-                                    this.previousElementSibling.style.display =
-                                        'none'
-                                "
                             ></iframe>
-                            <!-- Overlay to ensure hand pointer and clickability -->
-                            <div class="absolute inset-0 z-10"></div>
                         </div>
-
-                        <div class="p-4">
-                            <div class="text-sm font-medium text-neutral-950">
-                                Kaleora - AI Audit
-                            </div>
-                            <div class="mt-1 text-xs text-neutral-500">
-                                Concept / SaaS / Product Design
-                            </div>
-                        </div>
-                    </a>
-
-                    <a
-                        href="https://www.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Designs?node-id=5781-1913&viewport=-1372%2C540%2C0.34&t=QqjRwlXyH8YGynxD-8&scaling=contain&content-scaling=responsive&page-id=5663%3A577&hide-ui=1"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="group block cursor-pointer border border-neutral-200 bg-neutral-50 transition-all duration-200 hover:border-neutral-300 hover:bg-neutral-100 hover:scale-[1.02] transform"
-                    >
-                        <div
-                            class="relative aspect-4/3 overflow-hidden bg-neutral-200"
-                        >
-                            <!-- Loading Spinner -->
-                            <div
-                                class="loader absolute inset-0 flex items-center justify-center bg-neutral-200 z-20"
-                            >
-                                <svg
-                                    class="w-8 h-8 text-neutral-400 animate-spin"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <circle
-                                        class="opacity-25"
-                                        cx="12"
-                                        cy="12"
-                                        r="10"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                    ></circle>
-                                    <path
-                                        class="opacity-75"
-                                        fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <!-- Optimized Iframe -->
-                            <iframe
-                                loading="eager"
-                                fetchpriority="high"
-                                class="h-full w-full object-cover border-none pointer-events-none border-0 shadow-none"
-                                src="https://embed.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Designs?node-id=5781-3845&viewport=-1372%2C540%2C0.34&scaling=scale-down-width&content-scaling=fixed&page-id=5663%3A577&embed-host=share&hide-ui=1"
-                                allowfullscreen
-                                onload="
-                                    this.previousElementSibling.style.display =
-                                        'none'
-                                "
-                            ></iframe>
-                            <!-- Overlay to ensure hand pointer and clickability -->
-                            <div class="absolute inset-0 z-10"></div>
-                        </div>
-
-                        <div class="p-4">
-                            <div class="text-sm font-medium text-neutral-950">
-                                Hire Me Modules.
-                            </div>
-                            <div class="mt-1 text-xs text-neutral-500">
-                                Corporate / SaaS / UI
-                            </div>
-                        </div>
-                    </a>
-
-                    <a
-                        href="https://www.figma.com/proto/qYqpy0QsVtUZJVo7zASH7W/Outdoor-Activity-screens?node-id=5495-753&viewport=-1656%2C1385%2C0.45&t=DX4gmM4Oy9IwrLlQ-8&scaling=contain&content-scaling=responsive&starting-point-node-id=5302%3A3219&page-id=0%3A1&hide-ui=1"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="group block cursor-pointer border border-neutral-200 bg-neutral-50 transition-all duration-200 hover:border-neutral-300 hover:bg-neutral-100 hover:scale-[1.02] transform"
-                    >
-                        <div
-                            class="relative aspect-4/3 overflow-hidden bg-neutral-200"
-                        >
-                            <!-- Loading Spinner -->
-                            <div
-                                class="loader absolute inset-0 flex items-center justify-center bg-neutral-200 z-20"
-                            >
-                                <svg
-                                    class="w-8 h-8 text-neutral-400 animate-spin"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <circle
-                                        class="opacity-25"
-                                        cx="12"
-                                        cy="12"
-                                        r="10"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                    ></circle>
-                                    <path
-                                        class="opacity-75"
-                                        fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <!-- Optimized Iframe -->
-                            <iframe
-                                loading="eager"
-                                fetchpriority="high"
-                                class="h-full w-full object-cover border-none pointer-events-none"
-                                src="https://embed.figma.com/proto/qYqpy0QsVtUZJVo7zASH7W/Outdoor-Activity-screens?node-id=5495-753&viewport=-1656%2C1385%2C0.45&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=5302%3A3219&page-id=0%3A1&embed-host=share&hide-ui=1"
-                                allowfullscreen
-                                onload="
-                                    this.previousElementSibling.style.display =
-                                        'none'
-                                "
-                            ></iframe>
-                            <!-- Overlay to ensure hand pointer and clickability -->
-                            <div class="absolute inset-0 z-10"></div>
-                        </div>
-
-                        <div class="p-4">
-                            <div class="text-sm font-medium text-neutral-950">
-                                Hike Buddy - Screens.
-                            </div>
-                            <div class="mt-1 text-xs text-neutral-500">
-                                Client / SaaS / Product Design
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                    <!-- project 3  -->
                 </div>
             </section>
             <!-- project grid   -->
