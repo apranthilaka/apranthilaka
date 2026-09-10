@@ -14,6 +14,9 @@
         'Liberation Mono', 'Courier New', monospace; */
     --animate-hourglass-flip: flip 6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 
+    --background-image-hero-sky: url('../assets/hero-sky.avif');
+    --background-image-hero-unsplash: url('https://images.unsplash.com/photo-1663707599454-d394bf4a1d4c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
     @keyframes flip {
         0%,
         35% {
