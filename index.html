@@ -66,78 +66,243 @@
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     </head>
     <body
-        class="flex flex-col items-center justify-start lg:justify-center w-full h-screen font-sans antialiased bg-slate-50 text-neutral-900 text-sm"
+        class="flex flex-col items-center justify-start w-full h-screen font-sans antialiased bg-[#F7F7F4] text-neutral-900 text-base"
     >
         <!-- main container  -->
-        <div
-            class="max-w-200 w-full flex flex-col backdrop-blur-md p-5 lg:p-10 gap-5 overflow-auto modern-scrollbar lg:border lg:border-neutral-300 lg:rounded-md"
-        >
-            <!-- logo  -->
-            <div class="flex flex-col items-start gap-1 w-full h-auto">
-                <div>
-                    <span class="inline-flex items-center text-lg">
-                        <span class="leading-none font-semibold text-lg"
-                            >Apranthilaka</span
-                        >
-                    </span>
-                </div>
-                <div>
-                    <span>Product Designer & Design Engineer </span>
-                </div>
-            </div>
-            <!-- logo  -->
-            <!-- Intro  -->
-            <div class="h-full text-2xl lg:text-3xl font-semibold w-full">
-                Hey, I'm Aravinda. I design and build digital products people
-                actually enjoy using.
-            </div>
-            <!-- Intro  -->
-
-            <!-- projects  -->
+        <div class="max-w-300 w-full flex flex-col p-5 lg:p-10">
+            <!-- hero  -->
             <div
-                class="flex flex-col lg:flex-row justify-between w-full gap-5 my-5"
+                class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-full gap-10 max-w-170"
             >
-                <!-- Primary design text links  -->
-                <div class="w-full flex flex-col gap-4">
-                    <div class="font-semibold text-base">
-                        Primary Design projects
+                <div class="flex flex-col">
+                    <!-- logo  -->
+                    <div
+                        class="flex flex-col items-start w-full h-auto mb-8 lg:mb-5"
+                    >
+                        <div>
+                            <span class="inline-flex items-center text-lg">
+                                <span class="font-semibold text-lg"
+                                    >Apranthilaka</span
+                                >
+                            </span>
+                        </div>
+                        <div>
+                            <span>Product Designer & Design Engineer </span>
+                        </div>
                     </div>
-                    <nav
-                        aria-label="Social and portfolio links"
-                        class="flex flex-col gap-1"
+                    <!-- logo  -->
+                    <!-- Intro  -->
+                    <div
+                        class="h-full text-3xl lg:text-4xl font-semibold w-full lg:leading-12"
+                    >
+                        Hey, I'm Aravinda. I design and build digital products
+                        people actually enjoy using. <br />
+                        <div class="w-full text-lg font-sans mt-2 font-normal">
+                            Currently vailable for remote full-time roles and
+                            contract collaborations with companies and startups.
+                        </div>
+                    </div>
+                    <!-- Intro  -->
+
+                    <!-- main links  -->
+                    <div
+                        class="grid lg:grid-cols-[repeat(auto-fit,minmax(100px,1fr))] grid-cols-[repeat(auto-fit,minmax(150px,1fr))] w-full gap-3 mt-10 lg:mt-5"
                     >
                         <a
-                            href="https://www.figma.com/proto/OiECY5HRCcUmrRlP5ZVQXa/DS3-Designs?page-id=0%3A1&node-id=2-437&viewport=160%2C-1%2C0.77&t=vDjWxagzUUMrxOVR-8&scaling=contain&content-scaling=responsive&starting-point-node-id=2%3A437&hide-ui=1"
-                            target="_blank"
-                            class="hover:underline text-neutral-950 transition border-b border-neutral-300 py-1 w-full inline-block"
-                        >
-                            <!-- <i class="ph ph-twitter-logo" aria-hidden="true"></i> -->
-                            Metaful: AI driven ESG Dashboard
-                        </a>
-                        <a
-                            href="https://www.figma.com/proto/ocyYU4bx5pCngMb18JZxqw/DS2---Designs?node-id=7063-409&viewport=621%2C443%2C0.65&t=EugZ3iVyt3Ab8COq-8&scaling=contain&content-scaling=responsive&starting-point-node-id=7583%3A3004&page-id=0%3A1&hide-ui=1"
+                            href="https://dribbble.com/aravinda"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:underline text-neutral-950 transition border-b border-neutral-300 py-1 w-full inline-block"
+                            class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
                         >
-                            <!-- <i class="ph ph-linkedin-logo" aria-hidden="true"></i> -->
-                            Obrand: Internal Communication Tool
+                            <!-- <i class="ph ph-dribbble-logo" aria-hidden="true"></i> -->
+                            Dribbble
                         </a>
                         <a
-                            href="https://www.figma.com/proto/dTfOk6yBsvtQ7ORwaXGKUy/DS1---Designs?node-id=5003-1502&viewport=182%2C255%2C0.36&t=MvGK2ncnWcgcATn7-8&scaling=contain&content-scaling=responsive&starting-point-node-id=5003%3A1502&page-id=5003%3A555&hide-ui=1"
+                            href="https://www.linkedin.com/in/aravindaprabath/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:underline text-neutral-950 transition border-b border-neutral-300 py-1 w-full inline-block"
+                            class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
                         >
                             <!-- <i class="ph ph-linkedin-logo" aria-hidden="true"></i> -->
-                            Kaleora: Internal Onboarding Stepper
+                            LinkedIn
                         </a>
-                    </nav>
+                        <a
+                            href="mailto:apranthilaka@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                        >
+                            <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
+                            Email
+                        </a>
+                        <!-- 
+                <a
+                    href="https://www.figma.com/proto/ctAjPvhCHPOvq0jMWllaKm/Online-CVs---2026?node-id=1-29&p=f&viewport=566%2C25%2C0.66&t=DqEGJGhC4y8KsLhA-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center font-normal backdrop-blur-sm transition border rounded-md p-2 hover:bg-[#469969] hover:border-[#7abd96]"
+                >
+                    CV
+                </a> -->
+
+                        <a
+                            href="https://github.com/apranthilaka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                        >
+                            <!-- <i class="ph ph-figma-logo" aria-hidden="true"></i> -->
+                            Github
+                        </a>
+
+                        <a
+                            href="https://wa.me/94777499801"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                        >
+                            <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
+                            Whatsapp
+                        </a>
+
+                        <a
+                            href="https://t.me/apranthilaka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                        >
+                            <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
+                            Telegram
+                        </a>
+                    </div>
+
+                    <!-- main links   -->
+                </div>
+            </div>
+            <!-- hero  -->
+            <!-- projects  -->
+            <div
+                class="flex flex-col justify-between w-full gap-10 lg:gap-10 mt-10 lg:mt-10 text-sm"
+            >
+                <!-- Primary design text links  -->
+                <div
+                    class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(500px,1fr))] w-full gap-10"
+                >
+                    <div class="transition py-1 w-full inline-block pb-2">
+                        <!-- <i class="ph ph-twitter-logo" aria-hidden="true"></i> -->
+                        <img src="./assets/dribbble/Metaful.png" alt="" />
+                        <div class="font-semibold mt-6">
+                            Metaful: Team Management Dashboard
+                        </div>
+                        <div
+                            class="line-clamp-2 hover:line-clamp-none transition-all duration-300 cursor-pointer"
+                        >
+                            A modern SaaS team management dashboard that brings
+                            revenue metrics, member roles, and access control
+                            into one clean, scannable view.
+                        </div>
+                        <div class="flex flex-row gap-2 mt-2">
+                            <div
+                                class="border hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="p-2 px-3"
+                                    href="./projects/metaful.html"
+                                    >Figma Prototype [1920px or above]</a
+                                >
+                            </div>
+                            <div
+                                class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="p-2 px-3"
+                                    href="https://nextjsprojects.apranthilaka.workers.dev/"
+                                    >Developed Prototype</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transition py-1 w-full inline-block pb-2">
+                        <!-- <i class="ph ph-twitter-logo" aria-hidden="true"></i> -->
+                        <img src="./assets/dribbble/Obrand.png" alt="" />
+                        <div class="font-semibold mt-6">
+                            Obrand: Internal Email System
+                        </div>
+                        <div
+                            class="line-clamp-2 hover:line-clamp-none transition-all duration-300 cursor-pointer"
+                        >
+                            A streamlined internal communication tool that keeps
+                            team messages, shipment updates, and attachments in
+                            one workspace.
+                        </div>
+                        <div class="flex flex-row gap-2 mt-2">
+                            <div
+                                class="border hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="p-2 px-3"
+                                    href="./projects/obrand.html"
+                                    >Figma Prototype [1920px or above]</a
+                                >
+                            </div>
+                            <div
+                                class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="p-2 px-3"
+                                    href="https://nextjsprojects.apranthilaka.workers.dev/"
+                                    >Developed Prototype</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transition py-1 w-full inline-block pb-2">
+                        <!-- <i class="ph ph-twitter-logo" aria-hidden="true"></i> -->
+                        <img src="./assets/dribbble/Kaleora.png" alt="" />
+                        <div class="font-semibold mt-6">
+                            Kaleora: AI Audit Onboarding
+                        </div>
+                        <div
+                            class="line-clamp-2 hover:line-clamp-none transition-all duration-300 cursor-pointer"
+                        >
+                            The final step of a guided onboarding flow that lets
+                            users review everything before generating an AI
+                            search audit, each with an inline Edit option.
+                        </div>
+                        <div class="flex flex-row gap-2 mt-2">
+                            <div
+                                class="border hover:bg-neutral-900 hover:text-neutral-50 flex justify-center items-center"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="p-2 px-3"
+                                    href="./projects/kaleora.html"
+                                    >Figma Prototype [1920px or above]</a
+                                >
+                            </div>
+                            <div
+                                class="border p-2 px-3 hover:bg-neutral-900 hover:text-neutral-50"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="p-2 px-3"
+                                    href="https://nextjsprojects.apranthilaka.workers.dev/"
+                                    >Developed Prototype</a
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Primary design text links -->
 
                 <!-- Primary develop text links -->
-                <div class="w-full flex flex-col gap-4">
+                <!-- <div class="w-full flex flex-col gap-4">
                     <div class="font-semibold text-base">
                         Latest Dev Projects
                     </div>
@@ -149,120 +314,31 @@
                             href="https://sveltekitprojects.apranthilaka.workers.dev/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:underline text-neutral-950 transition border-b border-neutral-300 py-1 w-full inline-block"
+                            class="transition border-b border-b-neutral-300 hover:border-b-neutral-500 py-1 w-full inline-block pb-2"
                         >
-                            <!-- <i class="ph ph-twitter-logo" aria-hidden="true"></i> -->
                             PlantPal: Care reminder app for houseplants
                         </a>
                         <a
                             href="https://sveltekitprojects.apranthilaka.workers.dev/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:underline text-neutral-950 transition border-b border-neutral-300 py-1 w-full inline-block"
+                            class="transition border-b border-b-neutral-300 hover:border-b-neutral-500 py-1 w-full inline-block pb-2"
                         >
-                            <!-- <i class="ph ph-linkedin-logo" aria-hidden="true"></i> -->
                             DataDusk: Aanalytics reporting tool
                         </a>
                         <a
                             href="https://sveltekitprojects.apranthilaka.workers.dev/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:underline text-neutral-950 transition border-b border-neutral-300 py-1 w-full inline-block"
+                            class="transition border-b border-b-neutral-300 hover:border-b-neutral-500 py-1 w-full inline-block pb-2"
                         >
-                            <!-- <i class="ph ph-linkedin-logo" aria-hidden="true"></i> -->
                             FocusVibe: Timer and sound tool for deep work.
                         </a>
                     </nav>
-                </div>
+                </div> -->
                 <!-- Primary develop text links -->
             </div>
             <!-- projects  -->
-
-            <!-- availability  -->
-            <span class="text-sm w-full">
-                Available for remote full-time roles and contract collaborations
-                with companies and startups.
-            </span>
-            <!-- availability  -->
-
-            <!-- links  -->
-            <div
-                class="w-full grid grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-2"
-            >
-                <a
-                    href="mailto:apranthilaka@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal backdrop-blur-sm transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
-                    Email
-                </a>
-
-                <a
-                    href="https://wa.me/94777499801"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal backdrop-blur-sm transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
-                    Whatsapp
-                </a>
-
-                <a
-                    href="https://t.me/apranthilaka"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal backdrop-blur-sm transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
-                    Telegram
-                </a>
-            </div>
-            <!-- links -->
-
-            <!-- links  -->
-            <div
-                class="w-full grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-2"
-            >
-                <a
-                    href="https://www.linkedin.com/in/aravindaprabath/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-linkedin-logo" aria-hidden="true"></i> -->
-                    LinkedIn
-                </a>
-                <a
-                    href="https://dribbble.com/aravinda"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-dribbble-logo" aria-hidden="true"></i> -->
-                    Dribbble
-                </a>
-                <a
-                    href="https://github.com/apranthilaka"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-figma-logo" aria-hidden="true"></i> -->
-                    Github
-                </a>
-                <a
-                    href="https://www.figma.com/proto/ctAjPvhCHPOvq0jMWllaKm/Online-CVs---2026?node-id=1-29&p=f&viewport=566%2C25%2C0.66&t=DqEGJGhC4y8KsLhA-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 rounded-md border border-neutral-700 px-4 py-2 font-normal backdrop-blur-sm transition hover:bg-neutral-100"
-                >
-                    <!-- <i class="ph ph-file-text" aria-hidden="true"></i> CV -->
-                    CV
-                </a>
-            </div>
-            <!-- links -->
         </div>
         <!-- main container  -->
     </body>
